@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+/*------------------*/
+/*-- Fonts --*/
+/*------------------*/
+
+
+@font-face {
+    font-family: "Circe Extra";
+    src: url("fonts/Circe-ExtraBold.eot");
+    src: url("fonts/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Circe-ExtraBold.woff2") format("woff2"),
+        url("fonts/Circe-ExtraBold.woff") format("woff"),
+        url("fonts/Circe-ExtraBold.ttf") format("truetype"),
+        url("fonts/Circe-ExtraBold.svg#Circe-ExtraBold") format("svg");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe Extra";
+    src: url("fonts/Circe-ExtraLight.eot");
+    src: url("fonts/Circe-ExtraLight.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Circe-ExtraLight.woff2") format("woff2"),
+        url("fonts/Circe-ExtraLight.woff") format("woff"),
+        url("fonts/Circe-ExtraLight.ttf") format("truetype"),
+        url("fonts/Circe-ExtraLight.svg#Circe-ExtraLight") format("svg");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("fonts/Circe-Bold.eot");
+    src: url("fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Circe-Bold.woff2") format("woff2"),
+        url("fonts/Circe-Bold.woff") format("woff"),
+        url("fonts/Circe-Bold.ttf") format("truetype"),
+        url("fonts/Circe-Bold.svg#Circe-Bold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("fonts/Circe-Light.eot");
+    src: url("fonts/Circe-Light.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Circe-Light.woff2") format("woff2"),
+        url("fonts/Circe-Light.woff") format("woff"),
+        url("fonts/Circe-Light.ttf") format("truetype"),
+        url("fonts/Circe-Light.svg#Circe-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("fonts/Circe-Regular.eot");
+    src: url("fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Circe-Regular.woff2") format("woff2"),
+        url("fonts/Circe-Regular.woff") format("woff"),
+        url("fonts/Circe-Regular.ttf") format("truetype"),
+        url("fonts/Circe-Regular.svg#Circe-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*-------------------------------------------*/
+/* BASIC SETUP */
+/*-------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgba(205, 149, 68, 1);
+    color: #000000;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 100%;
+    /*background-color: rgba(205, 149, 68, 1);*/
+}
+
+.wrapper {
+    display: table; 
+    height: 100%;
+    min-width: 100%;
+/*    background-image: url(img/index_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+
+    background: -moz-linear-gradient(left,  rgba(131,131,133,0.8) 0%, rgba(156,137,114,0.8) 13%, rgba(192,149,85,0.8) 30%, rgba(224,159,61,0.8) 63%, rgba(253,167,38,0.8) 100%);
+    background: -webkit-linear-gradient(left,  rgba(131,131,133,0.8) 0%,rgba(156,137,114,0.8) 13%,rgba(192,149,85,0.8) 30%,rgba(224,159,61,0.8) 63%,rgba(253,167,38,0.8) 100%);
+    background: linear-gradient(to right,  rgba(131,131,133,0.8) 0%,rgba(156,137,114,0.8) 13%,rgba(192,149,85,0.8) 30%,rgba(224,159,61,0.8) 63%,rgba(253,167,38,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc838385', endColorstr='#ccfda726',GradientType=1 );
+
+}
+
+/*------------------*/
+
+.wrapper:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+/*    background: -moz-linear-gradient(left,  rgba(131,131,133,0.8) 0%, rgba(156,137,114,0.8) 13%, rgba(192,149,85,0.8) 30%, rgba(224,159,61,0.8) 63%, rgba(253,167,38,0.8) 100%);
+    background: -webkit-linear-gradient(left,  rgba(131,131,133,0.8) 0%,rgba(156,137,114,0.8) 13%,rgba(192,149,85,0.8) 30%,rgba(224,159,61,0.8) 63%,rgba(253,167,38,0.8) 100%);
+    background: linear-gradient(to right,  rgba(131,131,133,0.8) 0%,rgba(156,137,114,0.8) 13%,rgba(192,149,85,0.8) 30%,rgba(224,159,61,0.8) 63%,rgba(253,167,38,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc838385', endColorstr='#ccfda726',GradientType=1 );
+*/
+
+    background-image: url(img/index_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*------------------*/
+
+.content {
+    position: relative;
+    display: table-row;
+    height: 100%;
+}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+* html .clearfix             { zoom: 1; }
+*:first-child+html .clearfix { zoom: 1; }
+
+
+
+::-webkit-input-placeholder {color:#ffffff;}
+::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ffffff;}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+
+/*.animation-delay {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    -o-animation-delay: .5s;
+    animation-delay: .5s;
+}*/
+
+
+/*-------------------------------------------*/
+/* ----- DEFAULT STYLES ------ */
+/*-------------------------------------------*/
+
+.header,
+.content {
+    position: relative;
+    z-index: 3;
+}
+
+section {
+    position: relative;
+}
+
+h1 {
+
+}
+
+button {
+
+}
+
+h2 {
+
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover,
+button:active,
+a:hover,
+a:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+/*-------------------------------------------*/
+/* ----- REUSABLE COMPONENTS ------ */
+/*-------------------------------------------*/
+
+.row {
+    display: block;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+/*-------------------------------------------*/
+/* ----- HEADER ------ */
+/*-------------------------------------------*/
+
+.header {
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 0;
+    line-height: 0;
+    padding: 22px 0 0 0;
+}
+
+.header-left-col {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+/*    font-size: 0;
+    line-height: 0;*/
+}
+
+.logo-box {
+    
+    
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    height: auto;
+}
+
+.logo-link {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main-h-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+    min-width: 180px;
+    padding: 0 0 0 3%;
+}
+
+.main-h-box h1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 170px;
+    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 400px;
+    color: #b1b1b1;
+    text-transform: uppercase;
+}
+
+.header-right-col {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.contacts-list {
+    width: 100%;
+    text-align: right;
+}
+
+.contacts {
+    display: inline-block;
+    vertical-align: middle;
+    /*width: 50%;*/
+    width: 81%;
+    padding: 0 2% 0 0;
+}
+
+.contact-item {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    padding: 0 1%;
+}
+
+.contact-link {
+    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400px;
+    color: #b1b1b1;
+    text-decoration: underline;
+}
+
+.tel-link {
+    font-size: 14px;
+    line-height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2px 0 0 0;
+}
+
+.mail-link {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.map-link-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 19%;
+    padding: 0 0 0 2%;
+    border-left: 1px solid #b1b1b1;
+}
+
+.map-link {
+    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400px;
+    color: #b1b1b1;
+    text-decoration: underline;
+}
+
+.page-name {
+    text-align: right;
+}
+
+.page-name h2 {
+    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700px;
+    color: #b1b1b1;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+
+
+
+/*-------------------------------------------*/
+/* ----- CONTENT ------ */
+/*-------------------------------------------*/
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ----- NAVIGATION ------ */
+
+.center-position {
+    text-align: center;
+}
+
+.menu-section.center-position {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-section:before,
+.menu-section:after {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 1px;
+    margin: 0 auto;
+
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 31%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 69%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 31%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0.9) 69%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 31%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0.9) 69%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+
+}
+
+.nav-item:after {
+    display: block;
+    content: "";
+    width: 90%;
+    height: 1px;
+    margin: 0 auto;
+
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 31%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 69%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 31%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0.9) 69%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 31%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0.9) 69%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+
+}
+
+.nav-item:last-child:after {
+    display: none;
+}
+
+.link-h {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700px;
+    color: #ffffff;
+    margin: 40px 0 35px 0;
+    text-transform: uppercase;
+}
+
+/* ----- / NAVIGATION ------ */
+
+
+/*-------------------------------------------*/
+/* ----- FOOTER ------ */
+/*-------------------------------------------*/
+
+
+footer {
+    
+}
+
+.footer {
+    position: relative;
+    z-index: 2;
+    padding: 15px 0;
+}
+
+.footer-col-left {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.copy-p {
+    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+}
