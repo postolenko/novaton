@@ -444,7 +444,18 @@ select::-ms-expand {
     display: none;
 }
 
-.link-h {
+.link-h-desc {
+    display: block;
+    width: 70%;
+    font-family: "Circe Extra", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 200px;
+    color: #ffffff;
+    margin: 0 auto 30px auto;
+}
+
+.link-h-1 {
     display: inline-block;
     vertical-align: top;
     font-family: "Circe", Arial, Verdana, sans-serif;
@@ -455,6 +466,56 @@ select::-ms-expand {
     margin: 40px 0 35px 0;
     text-transform: uppercase;
 }
+
+.link-h-2 {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400px;
+    color: #ffffff;
+    margin: 25px 0 10px 0;
+}
+
+.nav-item a {
+    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400px;
+    color: #ffffff;
+}
+
+.inner-nav {
+    display: block;
+    height: 0;
+    overflow: hidden;
+/*
+    -webkit-transition-property: height;
+    -webkit-transition-duration: 3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: height;
+    -moz-transition-duration: 3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: height;
+    -ms-transition-duration: 3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: height;
+    -o-transition-duration: 3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: height;
+    transition-duration: 3s;
+    transition-timing-function: ease;*/
+
+}
+
+/*.inner-nav-height {
+    height: auto;
+}*/
 
 /* ----- / NAVIGATION ------ */
 
