@@ -205,8 +205,8 @@ button {
 
 h2 {
     font-family: "Circe", Arial, Verdana, sans-serif;
-    font-size: 43px;
-    line-height: 53px;
+    font-size: 24px;
+    line-height: 28px;
     font-weight: 700px;
     color: #ffffff;
     text-transform: uppercase;
@@ -223,6 +223,22 @@ p {
 
 li {
     list-style: none;
+    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400px;
+    color: #ffffff;
+    padding: 3px 0;
+}
+
+li:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 7px;
+    height: 1px;
+    background: rgba(255, 255, 255, 1);
+    margin: 0 1% 0 0;
 }
 
 a {
@@ -425,11 +441,16 @@ select::-ms-expand {
     display: inline-block;
     vertical-align: top;
     padding: 0 13px 0 0;
+    list-style: none;
 }
 
 .bread-crumb-item:before {
     display: inline-block;
     vertical-align: top;
+/*    width: 5px;
+    height: 17px;*/
+    margin: 0;
+    background: none;
     content: "/";
     font-family: "Circe", Arial, Verdana, sans-serif;
     font-size: 15px;
