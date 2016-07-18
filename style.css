@@ -711,6 +711,10 @@ select::-ms-expand {
     display: none;
 }
 
+.nav-item:before {
+    display: none;
+}
+
 .link-h-desc {
     display: block;
     width: 60%;
