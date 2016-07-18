@@ -711,7 +711,7 @@ select::-ms-expand {
     display: none;
 }
 
-.nav-item:before {
+.menu-section li:before {
     display: none;
 }
 
