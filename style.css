@@ -30,7 +30,7 @@
 }
 
 @font-face {
-    font-family: "Circe";
+    font-family: "Circe Bold";
     src: url("fonts/Circe-Bold.eot");
     src: url("fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"),
         url("fonts/Circe-Bold.woff2") format("woff2"),
@@ -413,7 +413,7 @@ select::-ms-expand {
 }
 
 .page-name h2 {
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-family: "Circe Bold", Arial, Verdana, sans-serif;
     /*font-family: "Circe";*/
     font-size: 18px;
     line-height: 24px;
@@ -615,7 +615,7 @@ select::-ms-expand {
 }
 
 .page-h {
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-family: "Circe Bold", Arial, Verdana, sans-serif;
     /*font-family: "Circe";*/
     font-size: 43px;
     line-height: 53px;
@@ -877,7 +877,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 .link-h {
     display: inline-block;
     vertical-align: top;
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-family: "Circe Bold", Arial, Verdana, sans-serif;
     /*font-family: "Circe";*/
     font-size: 18px;
     line-height: 26px;
@@ -890,7 +890,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 .link-h-1 {
     display: inline-block;
     vertical-align: top;
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-family: "Circe Bold", Arial, Verdana, sans-serif;
     font-size: 22px;
     line-height: 26px;
     font-weight: bold;
