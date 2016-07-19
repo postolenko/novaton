@@ -704,6 +704,9 @@ select::-ms-expand {
 
 /* ----- NAVIGATION ------ */
 
+
+
+
 .menu-section {
     float: right;
     width: 40%;
@@ -715,6 +718,19 @@ select::-ms-expand {
     font-size: 0;
     line-height: 0;
 }
+/*
+.nav-item {
+    float:right;
+}*/
+
+/*.menu-section {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
 
 .center-position {    
     display: block;
@@ -726,6 +742,10 @@ select::-ms-expand {
     text-align: center;
     padding: 0;
 }
+
+
+
+
 
 .menu-section:before,
 .menu-section:after {
@@ -771,6 +791,7 @@ select::-ms-expand {
 
 .nav-item:after {
     display: block;
+    /*float: right;*/
     content: "";
     width: 50%;
     height: 1px;
@@ -787,6 +808,7 @@ select::-ms-expand {
 
 .center-position .nav-item:after {
     width: 90%;
+    /*float: none;*/
     position: relative;
     margin: 0 auto;
 
@@ -813,6 +835,7 @@ select::-ms-expand {
     line-height: 21px;
     font-weight: 200px;
     color: #ffffff;
+    /*margin: 0 auto 30px auto;*/
     margin: 0 auto;
 }
 
@@ -836,6 +859,7 @@ select::-ms-expand {
     line-height: 26px;
     font-weight: 700px;
     color: #ffffff;
+    /*margin: 40px 0 35px 0;*/
     text-transform: uppercase;
 }
 
@@ -850,6 +874,9 @@ select::-ms-expand {
     margin: 25px 0 10px 0;
 }
 
+.nav-item {
+    /*margin: 0 0 35px 0;*/
+}
 
 .nav-item a {
     font-family: "Circe", Arial, Verdana, sans-serif;
