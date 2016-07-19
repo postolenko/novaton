@@ -60,7 +60,6 @@
 	.header-left-col {
 		display: inline-block;
     	vertical-align: middle;
-	    /*text-align: right;*/
 	    width: 57%;
 	}
 
@@ -68,14 +67,6 @@
 		display: inline-block;
     	vertical-align: middle;
 	    width: 43%;
-	}
-
-	.logo-box {
-	    /*width: 180px;*/
-	}
-
-	.logo-img {
-		/*width: 170px;*/
 	}
 
 	.contacts-list {

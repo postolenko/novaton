@@ -329,9 +329,7 @@ select::-ms-expand {
     display: inline-block;
     vertical-align: top;
     width: 50%;
-/*-----------------------*/
     text-align: right;
-/*-----------------------*/
 }
 
 .contacts-list {
@@ -550,7 +548,6 @@ select::-ms-expand {
 
 .bread-crumbs-section {
     width: 100%;
-    /*padding: 10px 0;*/
     padding: 60px 0 10px 0;
 }
 
@@ -568,8 +565,6 @@ select::-ms-expand {
 .bread-crumb-item:before {
     display: inline-block;
     vertical-align: top;
-/*    width: 5px;
-    height: 17px;*/
     margin: 0;
     background: none;
     content: "/";
@@ -599,8 +594,6 @@ select::-ms-expand {
 /* ----- PAGE CONTENT ------ */
 
 .page-content {
-   /* display: inline-block;
-    vertical-align: top;*/
     float: left;
     width: 60%;
     margin: 0 0 30px 0;
@@ -711,12 +704,7 @@ select::-ms-expand {
 
 /* ----- NAVIGATION ------ */
 
-
-
-
 .menu-section {
-    /*display: inline-block;
-    vertical-align: top;*/
     float: right;
     width: 40%;
     text-align: right;
@@ -727,19 +715,6 @@ select::-ms-expand {
     font-size: 0;
     line-height: 0;
 }
-/*
-.nav-item {
-    float:right;
-}*/
-
-/*.menu-section {
-    display: block;
-    width: 70%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}*/
-
 
 .center-position {    
     display: block;
@@ -751,10 +726,6 @@ select::-ms-expand {
     text-align: center;
     padding: 0;
 }
-
-
-
-
 
 .menu-section:before,
 .menu-section:after {
@@ -800,7 +771,6 @@ select::-ms-expand {
 
 .nav-item:after {
     display: block;
-    /*float: right;*/
     content: "";
     width: 50%;
     height: 1px;
@@ -817,7 +787,6 @@ select::-ms-expand {
 
 .center-position .nav-item:after {
     width: 90%;
-    /*float: none;*/
     position: relative;
     margin: 0 auto;
 
@@ -844,7 +813,6 @@ select::-ms-expand {
     line-height: 21px;
     font-weight: 200px;
     color: #ffffff;
-    /*margin: 0 auto 30px auto;*/
     margin: 0 auto;
 }
 
@@ -868,7 +836,6 @@ select::-ms-expand {
     line-height: 26px;
     font-weight: 700px;
     color: #ffffff;
-    /*margin: 40px 0 35px 0;*/
     text-transform: uppercase;
 }
 
@@ -883,9 +850,6 @@ select::-ms-expand {
     margin: 25px 0 10px 0;
 }
 
-.nav-item {
-    /*margin: 0 0 35px 0;*/
-}
 
 .nav-item a {
     font-family: "Circe", Arial, Verdana, sans-serif;
