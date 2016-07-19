@@ -81,7 +81,8 @@
 html {
     background-color: rgba(205, 149, 68, 1);
     color: #000000;
-    font-family: Arial, Verdana, sans-serif;
+    /*font-family: "Circe",Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 13px;
     line-height: 21px;
 }
@@ -204,7 +205,8 @@ button {
 }
 
 h2 {
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 24px;
     line-height: 28px;
     font-weight: 700px;
@@ -213,7 +215,8 @@ h2 {
 }
 
 p {
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 16px;
     line-height: 21px;
     font-weight: 700px;
@@ -223,7 +226,8 @@ p {
 
 li {
     list-style: none;
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 16px;
     line-height: 21px;
     font-weight: 400px;
@@ -317,8 +321,9 @@ select::-ms-expand {
 .main-h-box h1 {
     display: inline-block;
     vertical-align: top;
-    font-family: "Circe", Arial, Verdana, sans-serif;
-    font-size: 12px;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
+    font-size: 13px;
     line-height: 25px;
     font-weight: 400px;
     color: #b1b1b1;
@@ -361,7 +366,8 @@ select::-ms-expand {
     vertical-align: top;
     width: auto;
     margin: 0 auto;
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 14px;
     line-height: 25px;
     font-weight: 400px;
@@ -388,7 +394,8 @@ select::-ms-expand {
 }
 
 .map-link {
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 16px;
     line-height: 25px;
     font-weight: 400px;
@@ -402,7 +409,8 @@ select::-ms-expand {
 }
 
 .page-name h2 {
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 18px;
     line-height: 24px;
     font-weight: 700px;
@@ -568,7 +576,8 @@ select::-ms-expand {
     margin: 0;
     background: none;
     content: "/";
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 15px;
     line-height: 17px;
     font-weight: 400px;
@@ -583,7 +592,8 @@ select::-ms-expand {
 .bread-crumb-item a {
     display: inline-block;
     vertical-align: top;
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 15px;
     line-height: 17px;
     font-weight: 400px;
@@ -601,7 +611,8 @@ select::-ms-expand {
 }
 
 .page-h {
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 43px;
     line-height: 53px;
     font-weight: 700px;
@@ -688,7 +699,8 @@ select::-ms-expand {
 }
 
 .card-h {
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 16px;
     line-height: 20px;
     font-weight: 400px;
@@ -842,7 +854,8 @@ select::-ms-expand {
 .link-h {
     display: inline-block;
     vertical-align: top;
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 18px;
     line-height: 26px;
     font-weight: 700px;
@@ -854,7 +867,8 @@ select::-ms-expand {
 .link-h-1 {
     display: inline-block;
     vertical-align: top;
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 22px;
     line-height: 26px;
     font-weight: 700px;
@@ -866,7 +880,8 @@ select::-ms-expand {
 .link-h-2 {
     display: inline-block;
     vertical-align: top;
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 16px;
     line-height: 26px;
     font-weight: 400px;
@@ -879,7 +894,8 @@ select::-ms-expand {
 }
 
 .nav-item a {
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 15px;
     line-height: 20px;
     font-weight: 400px;
@@ -945,7 +961,8 @@ footer {
 }
 
 .copy-p {
-    font-family: "Circe", Arial, Verdana, sans-serif;
+    /*font-family: "Circe", Arial, Verdana, sans-serif;*/
+    font-family: "Circe";
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
