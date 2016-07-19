@@ -12,11 +12,12 @@
 
 	.logo-box {
 	    display: inline-block;
-	    vertical-align: middle;    
+	    vertical-align: middle;
+	    /*width: 230px;*/
 	}
 
 	.logo-img {
-	    width: 226px;
+	    /*width: 226px;*/
 	}
 
 	.header-left-col {
@@ -40,7 +41,7 @@
 	.respmenubtn-box {
 		display: inline-block;
 		vertical-align: middle;
-		width: 10%;
+		/*width: 10%;*/
 	}
 
 	.center-position {
@@ -56,12 +57,26 @@
 
 @media only screen and (max-width: 480px) {
 
-	.header-right-col {
+	.header-left-col {
+		display: inline-block;
+    	vertical-align: middle;
 	    text-align: right;
+	    width: 70%;
+	}
+
+	.header-right-col {
+		display: inline-block;
+    	vertical-align: middle;
+	    text-align: right;
+	    width: 30%;
+	}
+
+	.logo-box {
+	    /*width: 180px;*/
 	}
 
 	.logo-img {
-		width: 170px;
+		/*width: 170px;*/
 	}
 
 	.contacts-list {
