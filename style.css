@@ -322,7 +322,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 13px;
     line-height: 25px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #b1b1b1;
     text-transform: uppercase;
 }
@@ -346,7 +346,7 @@ select::-ms-expand {
     vertical-align: middle;
 
     /*-------------*/
-    
+
     width: 70%;
 
     /*------------*/
@@ -374,7 +374,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 14px;
     line-height: 25px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #b1b1b1;
     text-decoration: underline;
 }
@@ -402,7 +402,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 16px;
     line-height: 25px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #b1b1b1;
     text-decoration: underline;
 }
@@ -417,7 +417,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700px;
+    font-weight: 700;
     color: #b1b1b1;
     text-transform: uppercase;
     margin: 10px 0 5px 0;
@@ -584,7 +584,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 15px;
     line-height: 17px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #ffffff;
     padding: 0 13px 0 0;
 }
@@ -600,7 +600,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 15px;
     line-height: 17px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #ffffff;
 }
 
@@ -619,7 +619,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 43px;
     line-height: 53px;
-    font-weight: 700px;
+    font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
     padding: 10px 0;
@@ -707,7 +707,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
@@ -868,7 +868,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     font-family: "Circe Extra", Arial, Verdana, sans-serif;
     font-size: 16px;
     line-height: 21px;
-    font-weight: 200px;
+    font-weight: 200;
     color: #ffffff;
     /*margin: 0 auto 30px auto;*/
     margin: 0 auto;
@@ -881,7 +881,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     /*font-family: "Circe";*/
     font-size: 18px;
     line-height: 26px;
-    font-weight: 700px;
+    font-weight: 700;
     color: #ffffff;
     margin: 40px 0 35px 0;
     text-transform: uppercase;
@@ -891,12 +891,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     display: inline-block;
     vertical-align: top;
     font-family: "Circe", Arial, Verdana, sans-serif;
-    /*font-family: "Circe";*/
     font-size: 22px;
     line-height: 26px;
-    font-weight: 700px;
+    font-weight: 700;
     color: #ffffff;
-    /*margin: 40px 0 35px 0;*/
     text-transform: uppercase;
 }
 
@@ -907,7 +905,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     /*font-family: "Circe";*/
     font-size: 16px;
     line-height: 26px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #ffffff;
     margin: 25px 0 10px 0;
 }
@@ -921,7 +919,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     /*font-family: "Circe";*/
     font-size: 15px;
     line-height: 20px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #ffffff;
 }
 
@@ -988,6 +986,6 @@ footer {
     /*font-family: "Circe";*/
     font-size: 14px;
     line-height: 18px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #ffffff;
 }
