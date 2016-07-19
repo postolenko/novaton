@@ -60,14 +60,13 @@
 	.header-left-col {
 		display: inline-block;
     	vertical-align: middle;
-	    text-align: right;
+	    /*text-align: right;*/
 	    width: 70%;
 	}
 
 	.header-right-col {
 		display: inline-block;
     	vertical-align: middle;
-	    text-align: right;
 	    width: 30%;
 	}
 
