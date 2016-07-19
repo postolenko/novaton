@@ -37,7 +37,7 @@
         url("fonts/Circe-Bold.woff") format("woff"),
         url("fonts/Circe-Bold.ttf") format("truetype"),
         url("fonts/Circe-Bold.svg#Circe-Bold") format("svg");
-    font-weight: 700;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -61,7 +61,7 @@
         url("fonts/Circe-Regular.woff") format("woff"),
         url("fonts/Circe-Regular.ttf") format("truetype"),
         url("fonts/Circe-Regular.svg#Circe-Regular") format("svg");
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -322,7 +322,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 13px;
     line-height: 25px;
-    font-weight: 400;
+    font-weight: normal;
     color: #b1b1b1;
     text-transform: uppercase;
 }
@@ -374,7 +374,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 14px;
     line-height: 25px;
-    font-weight: 400;
+    font-weight: normal;
     color: #b1b1b1;
     text-decoration: underline;
 }
@@ -402,7 +402,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 16px;
     line-height: 25px;
-    font-weight: 400;
+    font-weight: normal;
     color: #b1b1b1;
     text-decoration: underline;
 }
@@ -417,7 +417,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: bold;
     color: #b1b1b1;
     text-transform: uppercase;
     margin: 10px 0 5px 0;
@@ -584,7 +584,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 15px;
     line-height: 17px;
-    font-weight: 400;
+    font-weight: normal;
     color: #ffffff;
     padding: 0 13px 0 0;
 }
@@ -600,7 +600,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 15px;
     line-height: 17px;
-    font-weight: 400;
+    font-weight: normal;
     color: #ffffff;
 }
 
@@ -619,7 +619,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 43px;
     line-height: 53px;
-    font-weight: 700;
+    font-weight: bold;
     color: #ffffff;
     text-transform: uppercase;
     padding: 10px 0;
@@ -707,7 +707,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400;
+    font-weight: normal;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
@@ -881,7 +881,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     /*font-family: "Circe";*/
     font-size: 18px;
     line-height: 26px;
-    font-weight: 700;
+    font-weight: bold;
     color: #ffffff;
     margin: 40px 0 35px 0;
     text-transform: uppercase;
@@ -893,7 +893,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     font-family: "Circe", Arial, Verdana, sans-serif;
     font-size: 22px;
     line-height: 26px;
-    font-weight: 700;
+    font-weight: bold;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -905,7 +905,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     /*font-family: "Circe";*/
     font-size: 16px;
     line-height: 26px;
-    font-weight: 400;
+    font-weight: normal;
     color: #ffffff;
     margin: 25px 0 10px 0;
 }
@@ -919,7 +919,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     /*font-family: "Circe";*/
     font-size: 15px;
     line-height: 20px;
-    font-weight: 400;
+    font-weight: normal;
     color: #ffffff;
 }
 
@@ -986,6 +986,6 @@ footer {
     /*font-family: "Circe";*/
     font-size: 14px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: normal;
     color: #ffffff;
 }
