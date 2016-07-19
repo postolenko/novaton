@@ -417,7 +417,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 18px;
     line-height: 24px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: #b1b1b1;
     text-transform: uppercase;
     margin: 10px 0 5px 0;
@@ -619,7 +619,7 @@ select::-ms-expand {
     /*font-family: "Circe";*/
     font-size: 43px;
     line-height: 53px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: #ffffff;
     text-transform: uppercase;
     padding: 10px 0;
@@ -881,7 +881,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     /*font-family: "Circe";*/
     font-size: 18px;
     line-height: 26px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: #ffffff;
     margin: 40px 0 35px 0;
     text-transform: uppercase;
@@ -893,7 +893,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     font-family: "Circe Bold", Arial, Verdana, sans-serif;
     font-size: 22px;
     line-height: 26px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: #ffffff;
     text-transform: uppercase;
 }
