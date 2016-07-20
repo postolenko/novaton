@@ -26,6 +26,7 @@ $(document).ready(function() {
 
 	$(".respmenubtn").click(function() {
 
+		$(".page").toggleClass("show-menu");
 		$(".page-content").toggleClass("show-menu");
 		$(".menu-section").toggleClass("show-menu");
 		// $(".respmenubtn").toggleClass("respmenubtn-active");

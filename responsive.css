@@ -52,6 +52,13 @@
 
 	.page {
 	    overflow-x: hidden;
+	    /*overflow-y: none;*/
+	    /*white-space:  nowrap;*/
+	    /*height: auto;*/
+	}
+
+	.page.show-menu {
+		overflow-x: visible;
 	}
 
 	.page-content {
@@ -128,7 +135,7 @@
 
 		/*--  /Responsive menu Nav Main Page --*/
 
-		
+
 
 	/*--  /Responsive menu Nav  --*/
 
