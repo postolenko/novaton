@@ -26,8 +26,9 @@ $(document).ready(function() {
 
 	$(".respmenubtn").click(function() {
 
-		// $(".main-navigation-list").toggleClass("respnavtopcoor");
-		$(".respmenubtn").toggleClass("respmenubtn-active");
+		$(".page-content").toggleClass("show-menu");
+		$(".menu-section").toggleClass("show-menu");
+		// $(".respmenubtn").toggleClass("respmenubtn-active");
 
 	});
 

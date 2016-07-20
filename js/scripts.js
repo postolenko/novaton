@@ -28,13 +28,15 @@ $(document).ready(function() {
 
     function getMenuNavPosition() {
 
-        if( $(".menu-section").hasClass("center-position") ) {
+        // if( $(".menu-section").hasClass("center-position") ) {
 
 
-            $(".menu-section").css({"margin-top" : ( $(".content").height() - $(".menu-section").height() ) / 2 + "px" });
+        //     $(".menu-section").css({"margin-top" : ( $(".content").height() - $(".menu-section").height() ) / 2 + "px" });
 
 
-        }
+        // }
+
+        $(".main-page-menu").css({"margin-top" : ( $(".content").height() - $(".main-page-menu").height() ) / 2 - $(".footer").height() + "px" });
 
     }
 
