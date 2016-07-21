@@ -7,7 +7,7 @@ $(document).ready(function() {
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 
-    getMenuNavPosition();  
+    // getMenuNavPosition();
 
 
     $(document).scroll(function() {
@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     $(window).resize(function() {
 
-        getMenuNavPosition();
+        // getMenuNavPosition();
 
     });
 

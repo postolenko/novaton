@@ -38,6 +38,12 @@ $(document).ready(function() {
 
 			$(".page").css({"min-height" : 0});
 
+			// if ( $(".page-content").hasClass("main-page-menu") ) {
+
+				// $(".main-page-menu").css({"margin-top" : ( $(".content").height() - $(".main-page-menu").height() ) / 2 - $(".footer").height() + "px" });
+
+			// }
+			
 		}
 
 		$(".page-content").toggleClass("show-menu");
