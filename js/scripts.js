@@ -107,10 +107,13 @@ $(document).ready(function() {
 
                         $(".page").css({"height" : "auto"});
 
-                         // $(".main-page-menu").css({"margin-top" : ( $(".content").height() - $(".main-page-menu").height() ) / 2 + "px" });
+                        $(".main-page-menu").css({"margin-top" : 0 + "px" });
 
-                    // }, 1000);
+                    setTimeout(function() {
 
+                        $(".main-page-menu").css({"margin-top" : ( $(".content").height() - $(".main-page-menu").height() ) / 2 + "px" });
+
+                    }, 40);
                    
                 // }
 
