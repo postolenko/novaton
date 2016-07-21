@@ -27,6 +27,19 @@ $(document).ready(function() {
 	$(".respmenubtn").click(function() {
 
 		$(".page").toggleClass("show-menu");
+
+		if( $(".page").hasClass("show-menu") ) {
+
+			$(".page").css({"min-height" : $(".menu-section").outerHeight(true) + "px"});
+
+			console.log( $(".menu-section").height() ) ;
+
+		} else {
+
+			$(".page").css({"min-height" : 0});
+
+		}
+
 		$(".page-content").toggleClass("show-menu");
 		$(".menu-section").toggleClass("show-menu");
 		// $(".respmenubtn").toggleClass("respmenubtn-active");
