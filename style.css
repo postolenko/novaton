@@ -728,6 +728,26 @@ select::-ms-expand {
     margin: 0 auto;
     text-align: center;
 
+    -webkit-transition-property: margin-top;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: margin-top;
+    -moz-transition-duration: .7s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: margin-top;
+    -ms-transition-duration: .7s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: margin-top;
+    -o-transition-duration: .7s;
+    -o-transition-timing-function: ease;
+
+    transition-property: margin-top;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+
 }
 
 .main-page-menu  ul {
