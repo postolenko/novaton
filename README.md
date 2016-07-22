@@ -7,3 +7,5 @@
 # http://postolenko.github.io/novaton/about.html
 
 # http://postolenko.github.io/novaton/contacts.html
+
+# http://postolenko.github.io/novaton/inner_su.html
