@@ -286,12 +286,16 @@
 
 										<a class="btn prev">
 
-											<span></span>
-											<span></span>
+											<div>
+
+												<span></span>
+												<span></span>
+
+											</div>
 
 										</a>
 
-										<div class="service-miniatures" id="owl-demo">
+										<div class="service-miniatures" id="owl-service">
 	          
 										  <div class="item"><img src="photos/photo_1.jpg" alt="Owl Image"></div>
 										  <div class="item"><img src="photos/photo_2.jpg" alt="Owl Image"></div>
@@ -315,8 +319,12 @@
 
 										<a class="btn next">
 
-											<span></span>
-											<span></span>
+											<div>
+
+												<span></span>
+												<span></span>
+
+											</div>
 
 										</a>
 
@@ -329,22 +337,44 @@
 								<h3>Наши партнеры</h3>
 
 
-								<div class="slick-slider-block">
+								<div class="slider-partners-block">
 									
-									<ul class="slide-partners">
+									<a class="btn-partner prev-partner">
 
-									    <li><img src="partners/partner_1.png" alt="" /></li>
-									    <li><img src="partners/partner_2.png" alt="" /></li>
-									    <li><img src="partners/partner_3.png" alt="" /></li>
-									    <li><img src="partners/partner_4.png" alt="" /></li>
-									    <li><img src="partners/partner_5.png" alt="" /></li>
-									    <li><img src="partners/partner_1.png" alt="" /></li>
-									    <li><img src="partners/partner_2.png" alt="" /></li>
-									    <li><img src="partners/partner_3.png" alt="" /></li>
-									    <li><img src="partners/partner_4.png" alt="" /></li>
-									    <li><img src="partners/partner_5.png" alt="" /></li>
+										<div>
 
-									 </ul>
+											<span></span>
+											<span></span>
+
+										</div>
+
+									</a>
+
+									<div class="slide-partners" id="owl-partners">
+          
+									  <div class="item"><img src="partners/partner_1.png" alt="" /></div>
+									  <div class="item"><img src="partners/partner_2.png" alt="" /></div>
+									  <div class="item"><img src="partners/partner_3.png" alt="" /></div>
+									  <div class="item"><img src="partners/partner_4.png" alt="" /></div>
+									  <div class="item"><img src="partners/partner_5.png" alt="" /></div>
+									  <div class="item"><img src="partners/partner_1.png" alt="" /></div>
+									  <div class="item"><img src="partners/partner_2.png" alt="" /></div>
+									  <div class="item"><img src="partners/partner_3.png" alt="" /></div>
+									  <div class="item"><img src="partners/partner_4.png" alt="" /></div>
+									  <div class="item"><img src="partners/partner_5.png" alt="" /></div>
+									 
+									</div>
+
+									<a class="btn-partner next-partner">
+
+										<div>
+
+											<span></span>
+											<span></span>
+
+										</div>
+
+									</a>
 
 								</div>
 
@@ -397,26 +427,49 @@
 
 			$(document).ready(function() {
 			 
-			var owl = $("#owl-demo");
+			var owlService = $("#owl-service");
  
-			  $("#owl-demo").owlCarousel({
-			 
+			  $("#owl-service").owlCarousel({
 				autoPlay: 9000,
 				pagination: false,
 				items : 7,
+				margin: 10,
+				// itemsDesktop : [1199,3],
+				// itemsDesktopSmall : [979,3]
+			 
+			  });
 
+			  $(".next").click(function(){
+			    owlService.trigger('owl.next');
+			  });
+
+			  $(".prev").click(function(){
+			    owlService.trigger('owl.prev');
+			  });
+
+
+			  // ////////
+
+			var owlPartners = $("#owl-partners");
+ 
+			  $("#owl-partners").owlCarousel({
+				autoPlay: 9000,
+				pagination: false,
+				items : 7,
+				margin: 10,
 				itemsDesktop : [1199,3],
 				itemsDesktopSmall : [979,3]
 			 
 			  });
 
-			  $(".next").click(function(){
-			    owl.trigger('owl.next');
+			  $(".next-partner").click(function(){
+			    owlPartners.trigger('owl.next');
 			  });
 
-			  $(".prev").click(function(){
-			    owl.trigger('owl.prev');
+			  $(".prev-partner").click(function(){
+			    owlPartners.trigger('owl.prev');
 			  });
+
 			 
 			});
 
