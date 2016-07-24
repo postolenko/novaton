@@ -269,7 +269,7 @@ a:active {
 
 .row {
     display: block;
-    max-width: 1280px;
+    max-width: 1220px;
     margin: 0 auto;
     /*padding: 0;*/
     padding: 0 1%;
@@ -415,6 +415,49 @@ select::-ms-expand {
     text-decoration: underline;
 }
 
+.contact-link,
+.map-link {
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.contact-link:link,
+.map-link:link,
+.contact-link:visited,
+.map-link:visited {
+    color: #b1b1b1;
+}
+
+.contact-link.active,
+.map-link.active,
+.contact-link:active,
+.map-link:active {
+    color: #fe9622;
+}
+
+.contact-link:hover,
+.map-link:hover {
+    color: #fe9622;
+}
+
 .page-name {
     display: block;
     text-align: right;
@@ -532,6 +575,10 @@ select::-ms-expand {
     padding: 5px 0;
 }
 
+.contacts-responsive ul {
+    padding: 2px 0;
+}
+
 .contact-item:before {
     display: none;
 }
@@ -622,9 +669,10 @@ select::-ms-expand {
 
 .page {
     position: relative;
-    margin-top: 50px;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    /*margin-left: 1%;*/
+    /*margin-right: 1%;*/
 }
 
 .page-content {
@@ -641,7 +689,7 @@ select::-ms-expand {
     font-weight: normal;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 10px 0;
+    padding: 10px 0 30px 0;
 }
 
 .page-img img {
@@ -727,6 +775,7 @@ select::-ms-expand {
     font-weight: normal;
     color: #ffffff;
     text-align: center;
+    text-transform: none;
     padding: 10px 0;
 }
 
@@ -976,8 +1025,7 @@ ul.inner-nav:after {
 }
 
 .menu-section .nav-item {
-    /*padding: 20px 0 0 0;*/
-    padding: 20px 0 10px 0;
+    padding: 15px 0 10px 0;
 }
 
 /*.menu-section .nav-item .inner-nav {
