@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 		nameFile = styleVal.slice(indexOfSlash + 1);
 
-		$(".slide-service").css({"opacity": .01});
+		$(".slide-service").css({"opacity": .3});
 
 		$(".slide-service").attr("style","background-image: url(photos/"+ nameFile);
 

@@ -52,7 +52,7 @@
 							
 							<div class="logo">
 
-								<a href="/" class="logo-link"><img class="logo-img" src="img/novaton_logo.png" alt="Novaton"></a>
+								<a href="/" class="logo-link"><img class="logo-img" src="img/logo.svg" alt="Novaton"></a>
 
 							</div>
 
@@ -331,6 +331,59 @@
 									</div>
 
 
+								<!-- 	<div class="modal-service-slider-box">
+
+										<div class="center-position-slider">
+
+											<a class="btn prev">
+
+												<div>
+
+													<span></span>
+													<span></span>
+
+												</div>
+
+											</a>										
+
+											<div class="service-modal-slider" id="modal-slider">
+
+												<div class="item"><img src="photos/photo_1.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_2.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_3.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_4.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_5.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_6.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_7.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_8.jpg" alt="Owl Image"></div>
+
+												<div class="item"><img src="photos/photo_1.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_2.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_3.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_4.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_5.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_6.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_7.jpg" alt="Owl Image"></div>
+												<div class="item"><img src="photos/photo_8.jpg" alt="Owl Image"></div>
+
+											</div>
+
+											<a class="btn next">
+
+												<div>
+
+													<span></span>
+													<span></span>
+
+												</div>
+
+											</a>
+
+										</div>
+
+									</div> -->
+
+
 								</div>
 
 
@@ -481,6 +534,20 @@
 			  $(".prev-partner").click(function(){
 			    owlPartners.trigger('owl.prev');
 			  });
+
+
+			$("#modal-slider").owlCarousel({
+
+				autoPlay: 3000,
+				navigation : true,
+				pagination: false,
+				slideSpeed : 600,
+				paginationSpeed : 400,
+				singleItem: true,
+			    autoHeight : true
+			    // transitionStyle:"fade"
+
+			});
 
 			 
 			});

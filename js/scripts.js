@@ -132,6 +132,75 @@ $(document).ready(function() {
 
 
 
+    // $(".main-page-menu .link-h").hover(function(){
+
+    //     var indexItem = $( ".main-page-menu .link-h" ).index( this );
+
+    //     var innerNavHeight = $(".main-page-menu .inner-nav-block:eq("+ indexItem +") > .inner-nav").height();
+
+    //     console.log(indexItem+"  "+innerNavHeight);
+
+    //     $(".main-page-menu .inner-nav-block:eq("+ indexItem +")").animate({"height": 300 + "px"}, 700);
+
+
+    // });
+
+
+    var indexItem;
+    var innerNavHeight;
+
+
+    $(".main-page-menu .nav-item ").hover(function(){
+
+        indexItem = $( ".main-page-menu .nav-item" ).index( this );
+
+        innerNavHeight = $(".main-page-menu .nav-item:eq("+ indexItem +") .inner-nav").height();
+
+        console.log(indexItem +"  "+ innerNavHeight);       
+
+        if ( $(".main-page-menu .inner-nav-block:eq("+ indexItem +")").height() <=0 ) {
+
+            innerNavHeight = $(".main-page-menu .nav-item:eq("+ indexItem +") .inner-nav").height();
+
+        } else {
+
+            innerNavHeight = 0;
+
+        }
+
+        $(".main-page-menu .inner-nav-block:eq("+ indexItem +")").animate({"height": innerNavHeight + "px"}, 700);
+
+    });
+
+
+    $(".menu-section .nav-item .link-h").hover(function(){
+
+        indexItem = $( ".menu-section .nav-item .link-h" ).index( this );
+
+        innerNavHeight = $(".menu-section .nav-item:eq("+ indexItem +") .inner-nav").height();
+
+        console.log(indexItem +"  "+ innerNavHeight);       
+
+        if ( $(".menu-section .inner-nav-block:eq("+ indexItem +")").height() <=0 ) {
+
+            innerNavHeight = $(".menu-section .nav-item:eq("+ indexItem +") .inner-nav").height();
+
+        } else {
+
+            innerNavHeight = 0;
+
+        }
+
+        $(".menu-section .inner-nav-block:eq("+ indexItem +")").animate({"height": innerNavHeight + "px"}, 700);
+
+    });
+
+
+
+
+
+
+
 
 // ----------------------------
 
