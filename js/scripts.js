@@ -231,24 +231,21 @@ $(document).ready(function() {
 
         indexItem = $( ".menu-section .nav-item .link-h" ).index( this );
 
-            // indexItem = $( ".menu-section .nav-item .link-h" ).index( this );
+        innerNavHeight = $(".menu-section .nav-item:eq("+ indexItem +") .inner-nav").height();
+
+        console.log(indexItem +"  "+ innerNavHeight);       
+
+        if ( $(".menu-section .inner-nav-block:eq("+ indexItem +")").height() <=0 ) {
 
             innerNavHeight = $(".menu-section .nav-item:eq("+ indexItem +") .inner-nav").height();
 
-            console.log(indexItem +"  "+ innerNavHeight);       
+        } else {
 
-            if ( $(".menu-section .inner-nav-block:eq("+ indexItem +")").height() <=0 ) {
+            innerNavHeight = 0;
 
-                innerNavHeight = $(".menu-section .nav-item:eq("+ indexItem +") .inner-nav").height();
+        }
 
-            } else {
-
-                innerNavHeight = 0;
-
-            }
-
-            $(".menu-section .inner-nav-block:eq("+ indexItem +")").animate({"height": innerNavHeight + "px"}, 700);
-
+        $(".menu-section .inner-nav-block:eq("+ indexItem +")").animate({"height": innerNavHeight + "px"}, 700);
 
     });
 
