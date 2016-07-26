@@ -1546,9 +1546,10 @@ p.link-h-desc {
 }
 
 .map-left-col {
-    display: inline-block;
-    vertical-align: top;
+    display: block;
+    float: left;
     width: 93%;
+    text-align: right;
 }
 
 .map {
@@ -1558,15 +1559,44 @@ p.link-h-desc {
     margin: 0 0 20px 0;
 }
 
+.show-map {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, .35);
+}
+
+.show-map p {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Circe", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: normal;
+    font-style: italic;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.show-map img {
+    width: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 3%;
+}
+
 .map-btn {
     display: block;
     float: right;
-    width: 26px;
-    height: 26px;
+    width: 36px;
+    height: 30px;
     cursor: pointer;
     border: 1px solid transparent;
     background: none;
-    margin: -2px 0 0 0;
 }
 
 .map-btn span {
@@ -1617,7 +1647,7 @@ p.link-h-desc {
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    margin: 5px 0 0 0;
+    margin: 13px 0 0 0;
 }
 
 .map-btn span:nth-child(2) {
@@ -1635,6 +1665,7 @@ p.link-h-desc {
     display: inline-block;
     vertical-align: top;
     width: 50%;
+    text-align: left;
 }
 
 .contacts-box {
@@ -1658,6 +1689,10 @@ p.link-h-desc {
     line-height: 21px;
     font-weight: normal;
     color: #ffffff;
+}
+
+.map-box ul {
+    padding: 0;
 }
 
 .map-box ul li:before {
@@ -1717,10 +1752,55 @@ p.link-h-desc {
     color: #2610f4;
 }
 
+.map-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#map {
+    display: block;
+    width: 200%;
+    margin: 0 0 0 -50%;
+    height: 570px;
+}
+
+.arrow-map {
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.arrow-map.up {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.show-map {
+    display: none;
+}
 
 .map-right-col {
-    display: inline-block;
-    vertical-align: top;
+    display: block;
+    float: right;
     width: 7%;
 }
 

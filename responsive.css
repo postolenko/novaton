@@ -83,7 +83,7 @@
 	}
 
 
-	.page-content {		
+/*	.page-content {		
 	    -webkit-transition-property: left;
 	    -webkit-transition-duration: .5s;
 	    -webkit-transition-timing-function: ease;
@@ -133,7 +133,7 @@
 
 	.menu-section.show-menu {
 		right: 0;
-	}
+	}*/
 
 		/*--  /Responsive menu Nav Main Page --*/
 
@@ -217,6 +217,58 @@
 	    width: 50%;
 	}
 
+
+		/*--  Contacts Page  --*/
+
+			.map-left-col {
+			    display: block;
+			    float: none;
+			    width: 100%;
+			}
+
+			.map-right-col {
+			    display: block;
+			    float: none;
+			    width: 100%;
+			    min-height: 60px;
+			}
+
+			#map {
+				height: 250px;
+			}
+
+			.show-map {
+			    display: block;
+			}
+
+			.contacts-box h2 {
+				text-align: center;
+				padding: 10px 0;
+			}
+
+			.contacts-box p {
+				padding: 5px 0;
+			}
+
+			.contacts-box .left-col,
+			.contacts-box .right-col {
+				display: block;
+				width: 100%;
+				text-align: left;
+				padding: 10px 0;
+			}
+
+			.map-btn span:first-child {
+			    margin: 13px 0 0 0;
+			}
+
+			.map-btn span:nth-child(2) {
+			    top: -2px;
+			}
+
+
+		/*--  Contacts Page  --*/
+
 		/*--  Responsive menu Nav  --*/
 
 	.page {
@@ -257,7 +309,7 @@
 	}
 
 
-	.menu-section {			
+	/*.menu-section {			
 	    -webkit-transition-property: height;
 	    -webkit-transition-duration: .5s;
 	    -webkit-transition-timing-function: ease;
@@ -277,7 +329,7 @@
 	    transition-property: height;
 	    transition-duration: .5s;
 	    transition-timing-function: ease;
-	}
+	}*/
 
 	.page-content.show-menu {
 		left: 0;

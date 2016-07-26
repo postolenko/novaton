@@ -21,6 +21,7 @@
 
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
+
 	<script>new WOW().init();</script>
 
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
@@ -132,7 +133,7 @@
 							
 							<nav>
 
-								<ul class="clearfix">
+								<ul class="menu-section-list clearfix">
 
 									<li class="nav-item">
 
@@ -142,93 +143,70 @@
 
 										</a>
 
-										<ul class="inner-nav">
+										<div class="inner-nav-block">
 
-											<li class="nav-item">
+											<ul class="inner-nav">
 
-												<a class="link-h" href="">
+												<li><a href="/">Умный дом</a></li>
+												<li><a href="/">Пожарная сигнализация</a></li>
+												<li><a href="/">Охранная сигнализация</a></li>
+												<li><a href="/">Мультирум</a></li>
+												<li><a href="/">Вентиляция и водопровод</a></li>
+												<li><a href="/">Электричество</a></li>
 
-													<h2 class="link-h-2">Умный дом</h2>
+											</ul>
 
-												</a>
-
-												<ul class="inner-nav">
-
-													<li><a href="">Пожарная сигнализация</a></li>
-													<li><a href="">Охранная сигнализация</a></li>
-													<li><a href="">Мультирум</a></li>
-													<li><a href="">Вентиляция и водопровод</a></li>
-													<li><a href="">Электричество</a></li>
-
-												</ul>											
-
-											</li>
-
-										</ul>
-
-										<ul class="inner-nav">
-
-											<li class="nav-item">
-
-												<a class="link-h" href="">
-
-													<h2 class="link-h-2">Умный дом</h2>
-
-												</a>
-
-												<ul class="inner-nav">
-
-													<li><a href="">Пожарная сигнализация</a></li>
-													<li><a href="">Охранная сигнализация</a></li>
-													<li><a href="">Мультирум</a></li>
-													<li><a href="">Вентиляция и водопровод</a></li>
-													<li><a href="">Электричество</a></li>
-
-												</ul>											
-
-											</li>
-
-										</ul>
+										</div>									
 
 									</li>
 
 									<li class="nav-item">
 
 										<a class="link-h" href="">
+
 											<h2 class="link-h-1">Сантехнические системы</h2>
+
 										</a>
 
-										<ul class="inner-nav">
+										<div class="inner-nav-block">
 
-											<li class="nav-item">
+											<ul class="inner-nav">
 
-												<a class="link-h" href="">
+												<li><a href="/">Умный дом</a></li>
+												<li><a href="/">Пожарная сигнализация</a></li>
+												<li><a href="/">Охранная сигнализация</a></li>
+												<li><a href="/">Мультирум</a></li>
+												<li><a href="/">Вентиляция и водопровод</a></li>
+												<li><a href="/">Электричество</a></li>
 
-													<h2 class="link-h-2">Заголовок 2</h2>
+											</ul>
 
-												</a>
-
-												<ul class="inner-nav">
-
-													<li><a href="">Пожарная сигнализация</a></li>
-													<li><a href="">Охранная сигнализация</a></li>
-													<li><a href="">Мультирум</a></li>
-													<li><a href="">Вентиляция и водопровод</a></li>
-													<li><a href="">Электричество</a></li>
-
-												</ul>											
-
-											</li>
-
-										</ul>
+										</div>									
 
 									</li>
 
 									<li class="nav-item">
 
 										<a class="link-h" href="">
+
 											<h2 class="link-h-1">Электроснабжение</h2>
+
 										</a>
+
+										<div class="inner-nav-block">
+
+											<ul class="inner-nav">
+
+												<li><a href="/">Умный дом</a></li>
+												<li><a href="/">Пожарная сигнализация</a></li>
+												<li><a href="/">Охранная сигнализация</a></li>
+												<li><a href="/">Мультирум</a></li>
+												<li><a href="/">Вентиляция и водопровод</a></li>
+												<li><a href="/">Электричество</a></li>
+
+											</ul>
+
+										</div>									
 
 									</li>
 
@@ -247,12 +225,32 @@
 
 							<section>
 
-								<div class="map-box">
+								<div class="map-box">								
 
-									<div class="map-left-col">
+									<div class="map-right-col">
 										
-										<div class="map">
-											<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=O1agPYF4r-IFTebbtrO27gfeynsACT5I&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+										<a href="/" class="map-btn">
+
+											<span></span>
+											<span></span>
+
+										</a>
+
+									</div>
+
+									<div class="map-left-col">									
+										
+										<div class="map-box">
+
+											<div id="map"></div>
+
+											<a class="show-map">
+
+												<p class="show-txt">Развернуть</p>
+												<img class="arrow-map" src="img/arrow_down_up.svg" alt="Развернуть Карту">
+
+											</a>
+
 										</div>
 
 										<div class="contacts-box">
@@ -279,17 +277,6 @@
 											</div>
 
 										</div>
-
-									</div>
-
-									<div class="map-right-col">
-										
-										<button class="map-btn">
-
-											<span></span>
-											<span></span>
-
-										<button>
 
 									</div>
 
@@ -336,6 +323,9 @@
 
 		<script src="js/scripts.js"></script>
 		<script src="js/menu_navigation.js"></script>
+
+		<script src="js/map.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGWEyUlxHOSfMgm2TliQLggP3mej7d_I&callback=initMap"></script>
   
 	</div>
 
