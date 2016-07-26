@@ -40,6 +40,9 @@ $(document).ready(function() {
 
                 $("#map").height(230);
 
+                // $(".page-content").css({"left": 0 + "%"});
+                // $(".menu-section").css({"right": 0 + "%"});
+
             }
 
         // --------
@@ -121,38 +124,42 @@ $(document).ready(function() {
 
                         $(".main-page-menu").css({"margin-top" : 0 + "px" });
 
+                // if(bodyWidth < 480) {
+
                     setTimeout(function() {
 
                         $(".main-page-menu").css({"margin-top" : ( $(".content").height() - $(".main-page-menu").height() ) / 2 + "px" });
 
-                    }, 40);                   
+                    }, 710);
+
+                // }
         
             }
 
-            // $(".page-content").toggleClass("show-menu");
-            // $(".menu-section").toggleClass("show-menu");
+            $(".page-content").toggleClass("show-menu");
+            $(".menu-section").toggleClass("show-menu");
 
             // var menuSection = document.getElementsByClassName("menu-section")[0];
 
             // var menuSectionCoor = menuSection.getBoundingClientRect();
             
-            if(bodyWidth > 480) {
+            // if(bodyWidth > 480) {
 
-                if ( $(".page").hasClass("show-menu") ) {
+            //     if ( $(".page").hasClass("show-menu") ) {
 
-                    $(".page-content").animate({"left": -60 + "%"}, 700);
-                    $(".menu-section").animate({"right": 0 + "%"}, 700);
+            //         $(".page-content").animate({"left": -60 + "%"}, 700);
+            //         $(".menu-section").animate({"right": 0 + "%"}, 700);
 
-                    console.log($(".menu-section").offset().left );
+            //         console.log($(".menu-section").offset().left );
 
-                } else {
+            //     } else {
 
-                    $(".page-content").animate({"left": 0 + "%"}, 700);
-                    $(".menu-section").animate({"right": -60 + "%"}, 700);
+            //         $(".page-content").animate({"left": 0 + "%"}, 700);
+            //         $(".menu-section").animate({"right": -60 + "%"}, 700);
 
-                }
+            //     }
 
-            }
+            // }
 
             if(bodyWidth <= 480) {
 
@@ -171,6 +178,12 @@ $(document).ready(function() {
                 } else {
 
                     $(".menu-section").animate({"height" : 0 + "px"}, 700);
+
+                    setTimeout(function() {
+
+                        $(".main-page-menu").css({"margin-top" : ( $(".content").height() - $(".main-page-menu").height() ) / 2 + "px" });
+
+                    }, 710);
 
                 }
 
