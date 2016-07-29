@@ -12,7 +12,7 @@ $(document).ready(function() {
     var mapHeightMob = $("#map").height();
 
     getMapSize();
-    // getSliderWidth();
+    getSliderWidth();
 
 
     $(document).scroll(function() {
@@ -33,27 +33,6 @@ $(document).ready(function() {
         getMapSize();
 
         getSliderWidth();
-
-        // --------
-
-            // if(bodyWidth > 480) {
-
-            //     if( !$(".menu-mob:visible") ) {
-
-            //         $(".respmenubtn").removeClass("respmenubtn-active");
-
-            //     }
-
-            // } else {
-
-            //     if( !$(".menu-tablet:visible") ) {
-
-            //         $(".respmenubtn").removeClass("respmenubtn-active");
-
-            //     }
-
-            // }
-
 
 
             if ( $(".respmenubtn").hasClass("respmenubtn-active") ) {
@@ -121,10 +100,6 @@ $(document).ready(function() {
 
    function getSliderWidth() {
 
-    // $(".slick-slider-width").css({"width" : ( $(window).width() / 100 ) * 62 + "px"});
-
-     // $(".slider-for").css({"width" : ( $(window).width() / 100 ) * 62 + "px"});
-
     var percentWidth;
 
     if(bodyWidth > 960) {
@@ -137,7 +112,6 @@ $(document).ready(function() {
 
     }
 
-    // $(".page-content").width(bodyWidth - 30);
 
     $(".slider-for").width( ( $(window).width() / 100 ) * percentWidth );
     $(".slider-miniatures-box").width( ( $(window).width() / 100 ) * percentWidth );
@@ -164,19 +138,6 @@ $(document).ready(function() {
 
 //  ---------------------------
 
-    // $(document).ready(function() {
-
-    //     $(".respmenubtn").click(function() {
-
-    //         $(".nav-list").toggleClass("respnavleftcoor");
-    //         $(".respmenubtn").toggleClass("respmenubtn-active");
-
-    //     });
-
-    // });
-
-
-// ----------------------------
 
     $(".respmenubtn").click(function() {
 
@@ -191,32 +152,15 @@ $(document).ready(function() {
                     if ( $(".page").hasClass("show-menu") ) {
 
                         $(".menu-tablet").css({"display" : "inline-block"});
-                        // $(".page-content").css({"display" : "inline-block"});
                         $(".page").css({"overflow-x" : "hidden"});
 
                         $(".page-content").animate({"margin-left": -60 + "%"}, 700);
                         $(".menu-tablet").animate({"margin-right": 0 + "%"}, 700);
 
-                        // setTimeout(function() {
-
-                        //     $(".page-main").css({"overflow": "visible"});
-                        //     $(".page-main").css({"height" : "auto"});
-                        //     // $(".page").css({"height" : $(".menu-section").height() + "px"});
-
-                        // }, 710);                        
-
-                        // console.log($(".menu-section").offset().left );
-
-                        // $(".page").css({ "min-height" : $(".menu-section").height() + "px"});
-
                     } else {
 
                         $(".page-content").animate({"margin-left": 0 + "%"}, 700);
                         $(".menu-tablet").animate({"margin-right": -60 + "%"}, 700);
-                        // $(".page-content").css({"display" : "block"});
-
-                        // $(".page").css({"overflow": "hidden"});
-                        // $(".page-main").css({"height" : "auto"});
 
                         setTimeout(function() {
 
@@ -233,11 +177,7 @@ $(document).ready(function() {
 
                 if( $(".menu-section").hasClass("menu-mob") ) {
 
-                console.log("menu-mob");
-
                 var menuSectionHeight = $(".menu-mob .menu-section-list").outerHeight(true);
-
-                console.log(menuSectionHeight);
 
                 $(".page").toggleClass("show-menu");
 
@@ -307,11 +247,7 @@ $(document).ready(function() {
 
         }
 
-        console.log(indexLeftItem +"  "+ innerLeftNavHeight);
-
         $( ".menu-section .nav-item .inner-nav-block:eq("+ indexLeftItem +")").delay(700).stop().animate({"height": innerLeftNavHeight + "px"}, 700);
-
-        // $(".page").css({"height" : $(".menu-section").height() + "px"});
 
     });
 
