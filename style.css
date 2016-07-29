@@ -1446,6 +1446,11 @@ ul.menu-section-list {
         transform: rotate(-45deg);
     }
 
+    .service-miniatures .slick-slide
+    {
+        width: 100px !important;
+    }
+
 /*  /Slider Service  */
 
 
@@ -1619,12 +1624,6 @@ ul.menu-section-list {
         max-width: 70%;
         max-height: 80%;
         margin: 0 auto;
-    }
-
-    .service-modal-slider {
-  /*      display: block;
-        width: 80%;
-        margin: 0 auto;*/
     }
 
     .service-modal-slider .item img {
