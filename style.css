@@ -195,14 +195,6 @@ section {
     position: relative;
 }
 
-h1 {
-
-}
-
-button {
-
-}
-
 h2 {
     font-family: "Circe", Arial, Verdana, sans-serif;
     font-size: 24px;
@@ -531,6 +523,8 @@ select::-ms-expand {
 .page-name-link.active {
     color: #fe9622;
 }
+
+
 .page-name-link:active {
     color: #fe9622;
 }
@@ -541,7 +535,6 @@ select::-ms-expand {
 .respmenubtn-box {
     display: none;
     text-align: right;
-    /*padding: 0 10px 0 0;*/
 }
 
 .respmenubtn {
@@ -628,6 +621,10 @@ select::-ms-expand {
 
 
 /* ----- / Responsive Menu Button ------ */
+
+/*-------------------------------------------*/
+/* ----- / HEADER ------ */
+/*-------------------------------------------*/
 
 /* ----- Responsive Contacts ------ */
 
@@ -807,7 +804,6 @@ select::-ms-expand {
 
 }
 
-
 .card-img-box:link,
 .card-img-box:visited {
     background: transparent;
@@ -879,14 +875,9 @@ select::-ms-expand {
 
 }
 
-.main-page-menu {
-
-}
-
 .table-box {
     display: table;
     width: 100%;
-    /*margin: 0 auto;*/
 }
 
 .left-cell,
@@ -917,8 +908,6 @@ select::-ms-expand {
     content: "";
     width: 50%;
     height: 1px;
-    /*margin: 0 auto;*/
-    /*margin: 0 auto 40px auto;*/
 
     background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.82) 45%, rgba(255,255,255,0.9) 55%, rgba(255,255,255,0) 100%);
     background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.82) 45%,rgba(255,255,255,0.9) 55%,rgba(255,255,255,0) 100%);
@@ -938,8 +927,6 @@ select::-ms-expand {
     display: block;
     width: 100%;
     position: relative;
-    /*padding: 35px 0 0 0;*/
-    /*padding: 5px 0 0 0;*/
 }
 
 .main-page-menu-list .nav-item:after {
@@ -948,7 +935,6 @@ select::-ms-expand {
     width: 90%;
     height: 1px;
     position: relative;
-    /*margin: 0 auto;*/
     margin: 30px auto;
 
     background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.82) 45%, rgba(255,255,255,0.9) 55%, rgba(255,255,255,0) 100%);
@@ -971,9 +957,6 @@ select::-ms-expand {
 .inner-nav {
     display: block;
     height: auto;
-    /*padding: 30px 0 0 0;*/
-    /*height: 0;*/
-    /*overflow-y: hidden;*/
 }
 
 .inner-nav li:nth-child(1) {
@@ -998,12 +981,9 @@ p.link-h-desc {
     width: 60%;
     font-family: "Circe ExtraLight", Arial, Verdana, sans-serif;
     font-size: 16px;
-    /*line-height: 21px;*/
     line-height: 18px;
     color: #ffffff;
     margin: 0 auto;
-    /*padding: 0 0 35px 0;*/
-    /*padding: 0 0 25px 0;*/
 }
 
 .link-h {
@@ -1012,7 +992,6 @@ p.link-h-desc {
     width: auto;
     font-family: "Circe", Arial, Verdana, sans-serif;
     font-size: 18px;
-    /*line-height: 26px;*/
     line-height: 20px;
     font-weight: normal;
     color: #ffffff;
@@ -1025,7 +1004,6 @@ p.link-h-desc {
     width: auto;
     font-family: "Circe", Arial, Verdana, sans-serif;
     font-size: 22px;
-    /*line-height: 26px;*/
     line-height: 24px;
     font-weight: normal;
     color: #ffffff;
@@ -1037,16 +1015,13 @@ p.link-h-desc {
     vertical-align: top;
     font-family: "Circe", Arial, Verdana, sans-serif;
     font-size: 16px;
-    /*line-height: 26px;*/
     line-height: 18px;
     font-weight: normal;
     color: #ffffff;
-    /*margin: 25px 0 10px 0;*/
 }
 
 .inner-nav {
     display: block;
-    /*margin: 0 0 20px 0;*/
 }
 
 .inner-nav li {
@@ -1079,8 +1054,7 @@ p.link-h-desc {
 .menu-section:after {
     display: block;
     content: "";
-    /*width: 100%;*/
-    width: 80%;
+    width: 93%;
     height: 1px;
     float: right;
     background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 31%, rgba(255,255,255,0.95) 50%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%);
@@ -1110,11 +1084,9 @@ p.link-h-desc {
 .menu-section .nav-item:after {
     display: block;
     content: "";
-    /*width: 97%;*/
-    width: 80%;
+    width: 93%;
     height: 1px;
     float: right;
-    /*margin: 10px 0;*/
     margin: 14px 0 18px 0;
     background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 31%, rgba(255,255,255,0.95) 50%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%);
     background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 31%,rgba(255,255,255,0.95) 50%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%);
@@ -1124,10 +1096,6 @@ p.link-h-desc {
 
 .menu-section .nav-item:last-child:after {
     display: none;
-}
-
-.menu-section .link-h {
-    /*margin: 8px 0 7px 0;*/
 }
 
 .menu-section .link-h-1 {
@@ -1150,11 +1118,6 @@ ul.menu-section-list {
     width: 100%;
     text-align: right;
 }
-
-.main-page-menu-list .link-h {
-    /*margin: 0px 0 15px 0;*/
-}
-
 
 .page-main .menu-section {
     display: none;
@@ -1922,10 +1885,6 @@ ul.menu-section-list {
 /*-------------------------------------------*/
 
 
-footer {
-    
-}
-
 .footer {
     display: block;
     width: 100%;
@@ -1947,3 +1906,4 @@ footer {
     font-weight: normal;
     color: #ffffff;
 }
+

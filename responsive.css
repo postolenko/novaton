@@ -12,6 +12,8 @@
 		display: none;
 	}
 
+	/*-- Header --*/
+
 	.logo-box {
 	    display: inline-block;
 	    vertical-align: middle;
@@ -26,9 +28,14 @@
 	}
 
 	.tel-link {
-	    font-size: 16px;
+	    font-size: 14px;
 	    line-height: 25px;
 	    margin: 0;
+	}
+
+	.mail-link {
+		font-size: 16px;
+	    line-height: 24px;
 	}
 
 	.contacts {
@@ -36,7 +43,6 @@
 	}
 
 	.header-right-col {
-	    /*margin: 0;*/
 	    margin: -9px 0 0 0;
 	}
 
@@ -47,9 +53,12 @@
 	.respmenubtn-box {
 		display: inline-block;
 		vertical-align: middle;
-		/*width: 23%;*/
 		width: 12%;
 	}
+
+	/*-- /Header --*/
+
+	/*-- Main Page --*/
 
 	.main-page-menu  {
 	    width: 96%;
@@ -64,52 +73,23 @@
 
 	/*--  Responsive menu Nav  --*/
 
-	.page {
-	    /*overflow-x: hidden;
-	    overflow-y: hidden;*/
-	    /*overflow: hidden;*/
-	    /*overflow-y: visible;*/
-	}
-
-	.page.show-menu {
-		/*overflow-x: visible;*/
-	}
-
 	.page-content {
 		width: 100%;
 		padding: 0;
 	    position: relative;
 	    left: 0;
-	    /*outline: 2px solid red;*/
 	}
 
 	.menu-section {
-		/*outline: 2px solid red;*/
-		/*width: 60%;*/
 		width: 59%;
-		/*position: absolute;
-    	right: -60%;*/
     	display: none;
     	margin-right: -60%;
 	}
-
-	/*--  /Responsive menu Nav Main Page --*/
-
-		/*	.page-main .menu-section {
-			    display: block;
-			}
-
-			.visible-768 {
-				display: block;
-			}*/
-
-	/*--  /Responsive menu Nav Main Page --*/
 
 	.menu-mob {
 		display: none !important;
 	}
 
-	/*--  /Responsive menu Nav  --*/
 
 }
 
@@ -121,8 +101,6 @@
 
 }
 
-
-/*@media only screen and (max-width: 480px) {*/
 @media only screen and (max-width: 480px) {
 
 	p {
@@ -145,13 +123,13 @@
 	.header-left-col {
 		display: inline-block;
     	vertical-align: middle;
-	    width: 57%;
+	    width: 62%;
 	}
 
 	.header-right-col {
 		display: inline-block;
     	vertical-align: middle;
-	    width: 43%;
+	    width: 38%;
 	}
 
 	.contacts-list {
@@ -192,10 +170,6 @@
 	    font-size: 22px;
 	    line-height: 29px;
 	    padding: 50px 0 10px 0;
-	}
-
-	.link-h {
-	    /*margin: 20px 0;*/
 	}
 
 	.link-h-1 {
@@ -315,7 +289,6 @@
 	    content: "";
 	    width: 96%;
 	    height: 1px;
-	    /*margin: 20px auto 0 auto;*/
 	    margin: 0;
 	    float: none;
 
@@ -325,10 +298,6 @@
 	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
 
 	}
-
-/*	.menu-section:after {
-		margin: 20px auto 0 auto;
-	}*/
 
 	.menu-section:before {
 		display: none;
@@ -353,6 +322,8 @@
 
 	/*--  /Responsive menu Nav  --*/
 
+	/*--  Footer  --*/
+
 	.footer {
 		text-align: center;
 	}
@@ -360,5 +331,7 @@
 	p.copy-p {
 		padding: 0;
 	}
+
+	/*--  /Footer  --*/
 
 }

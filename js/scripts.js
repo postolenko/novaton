@@ -4,36 +4,40 @@ $(document).ready(function() {
     d = document,
     e = d.documentElement,
     g = d.getElementsByTagName('body')[0],
-    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth; // ширина окна браузера
 
 
-    getMenuNavPosition();
+    getMenuNavPosition(); // получение центральной позиции меню на главной странице
 
-    var mapHeightMob = $("#map").height();
+    var mapHeightMob = $("#map").height();  // высота карты на странице "Контакты"
 
-    getMapSize();
-    getSliderWidth();
+    getMapSize();  // получение размера ширины карты на странице контактов
+    getSliderWidth(); // получение размера ширины слайдера на странице Услуги
 
 
     $(document).scroll(function() {
         
-            getScrollToTopBtn();
-
+            // getScrollToTopBtn();   // при необходимости эту функцию можно использовать для отображения кнопки скролла
+                                      // для прокрутки страницы в самый вверх
     });
 
     $(window).resize(function() {
 
-        bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+        bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth; // ширина окна браузера
 
-        getMenuNavPosition();
+        getMenuNavPosition(); // получение центральной позиции меню на главной странице
 
-        mapHeightMob = $("#map").height();
+        mapHeightMob = $("#map").height();  // высота карты на странице "Контакты"
 
 
-        getMapSize();
+        getMapSize(); // получение размера ширины карты на странице контактов
 
-        getSliderWidth();
+        getSliderWidth(); // получение размера ширины слайдера на странице Услуги
 
+
+        //  ---------------------------------------------------------------
+
+        //  Этот код для адаптиврного меню. Отвечает за поведение меню при ресайзе окна браузера
 
             if ( $(".respmenubtn").hasClass("respmenubtn-active") ) {
 
@@ -94,11 +98,14 @@ $(document).ready(function() {
 
             }
 
+    //  ---------------------------------------------------------------
 
     });
 
 
-   function getSliderWidth() {
+    // -----------------------------------------------------------------------------------------
+
+   function getSliderWidth() {   // получение размера ширины слайдера на странице Услуги
 
     var percentWidth;
 
@@ -121,9 +128,11 @@ $(document).ready(function() {
 
    } 
 
+// -----------------------------------------------------------------------------------------
 
 //  ---------------------------
 
+// получение центральной позиции меню на главной странице
 
     function getMenuNavPosition() {
 
@@ -135,9 +144,9 @@ $(document).ready(function() {
 
     }
 
+//  ---------------------------------------------------------------------
 
-//  ---------------------------
-
+//  Показать-скрыть меню при клике на гамбургер
 
     $(".respmenubtn").click(function() {
 
@@ -203,11 +212,13 @@ $(document).ready(function() {
 
     });
 
-
+// ------------------
 
 
     var indexItem;
     var innerNavHeight;
+
+// Поведение Центрально Меню на Главной Странице при наведении курсора. 
 
 
     $(".main-page-menu .nav-item").hover(function(){
@@ -229,6 +240,7 @@ $(document).ready(function() {
     });
 
 
+// Поведение Навигиционного Меню при наведении курсора. 
 
     var indexLeftItem;
     var innerLeftNavHeight;
@@ -251,13 +263,11 @@ $(document).ready(function() {
 
     });
 
-
-
-// ----------------------------
+// ----------------------------------------------------
 
 
 
-    function getMapSize() {
+    function getMapSize() {   // получение размера ширины карты на странице контактов
 
         if(bodyWidth >= 480) {
 
@@ -304,7 +314,7 @@ $(document).ready(function() {
 
 
 
-// ----------------------------
+// ---------------------------------------------------------
 
     $(".scroll-to-top").click(function () {
 
@@ -319,7 +329,8 @@ $(document).ready(function() {
     });
 
 
-    function getScrollToTopBtn() {
+    function getScrollToTopBtn() {    // при необходимости эту функцию можно использовать для отображения кнопки скролла
+                                      // для прокрутки страницы в самый вверх. Только кнопке задайте класс "scroll-to-top". 
 
 
         if ($(window).scrollTop() > $(".header-bg").height() ) {
@@ -334,6 +345,6 @@ $(document).ready(function() {
 
     }
 
-
+// ---------------------------------------------------------
 
 });
