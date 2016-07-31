@@ -121,7 +121,7 @@ $(document).ready(function() {
 
 
     $(".slider-for").width( ( $(window).width() / 100 ) * percentWidth );
-    $(".slider-miniatures-box").width( ( $(window).width() / 100 ) * percentWidth );
+    $(".owl-carousel").width( ( $(window).width() / 100 ) * percentWidth );
     $(".slide-partners").width( ( $(window).width() / 100 ) * percentWidth );
     $(".slider-partners-block").width( ( $(window).width() / 100 ) * percentWidth );
     $(".slider-block").width( ( $(window).width() / 100 ) * percentWidth );
