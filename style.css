@@ -132,7 +132,12 @@ body {
 }
 
 .wrapper.bg-second:before {
-    background-image: url(img/contacts_bg.jpg);}
+    background-image: url(img/contacts_bg.jpg);
+}
+
+.wrapper.bg-inner-su:before {
+    background-image: url(img/inner_su_bg.jpg);
+}
 
 /*------------------*/
 
@@ -1153,13 +1158,6 @@ ul.menu-section-list {
 /*  /Slider Service  */
 
 
-.slider-for .item img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-
     .slider-block {
         font-size: 0;
         line-height: 0;
@@ -1168,19 +1166,87 @@ ul.menu-section-list {
 
     .slide-service {
         width: 100%;
-        height: 465px;
+        /*height: 465px;*/
         position: relative;
         overflow-y: hidden;
         background-color: rgba(255, 255, 255, .3);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;  
-    } 
+    }
+
+    .responsive-show-tab {
+        display: none;
+        width: 100%;
+        cursor: pointer;
+        background: rgba(0, 0, 0, .5);
+    }
+
+    .responsive-show-tab .show-txt {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: "Circe", Arial, Verdana, sans-serif;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: normal;
+        font-style: italic;
+        color: #ffffff;
+        padding: 10px 0;
+    }
+
+    .responsive-show-tab img {
+        width: 14px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 3%;
+    }
+
+    .arrow-desc {
+        -webkit-transition-property: transform;
+        -webkit-transition-duration: .3s;
+        -webkit-transition-timing-function: ease;
+
+        -moz-transition-property: transform;
+        -moz-transition-duration: .3s;
+        -moz-transition-timing-function: ease;
+
+        -ms-transition-property: transform;
+        -ms-transition-duration: .3s;
+        -ms-transition-timing-function: ease;
+
+        -o-transition-property: transform;
+        -o-transition-duration: .3s;
+        -o-transition-timing-function: ease;
+
+        transition-property: transform;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+    }
+
+    .arrow-desc.up {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+
+    .slider-for .item {
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    .slider-for .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 
     .slide-description {
         display: block;
         background: rgba(0, 0, 0, .3);
         width: 100%;
+        height: auto;
         padding: 2% 9%;
         position: absolute;
         bottom: -100%;
@@ -1219,14 +1285,34 @@ ul.menu-section-list {
         bottom: 0;
     }
 
+    .slick-slider-width {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+
     .slider-miniatures-box {
+        display: block;
         position: relative;
+        z-index: 10;
+        overflow: hidden !important;
+        width: 100%;
     }
 
     .service-miniatures {
         display: block;
-        width: 100%;
-        margin: 10px 0;
+        width: auto;
+        white-space: nowrap;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .service-miniatures .item {
+        display: block;
+        float: left;
+        width: 110px;
+        height: auto;
+        padding: 10px 5px;
     }
 
     .service-miniatures .item img {
@@ -1410,10 +1496,10 @@ ul.menu-section-list {
         transform: rotate(-45deg);
     }
 
-    .service-miniatures .slick-slide
+/*    .service-miniatures .slick-slide
     {
         width: 100px !important;
-    }
+    }*/
 
 /*  /Slider Service  */
 
@@ -1421,8 +1507,25 @@ ul.menu-section-list {
 /*  Slider Partners  */
 
     .slider-partners-block {
+        display: block;
+        width: 100%;
         position: relative;
         padding: 20px 0;
+        overflow: hidden;
+    }
+
+    .slider-partners {
+        display: block;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    .slider-partners .item {
+        display: block;
+        float: left;
+        width: 110px;
+        padding: 10px 5px;
+        text-align: center;
     }
 
     .btn-partner {
@@ -1570,7 +1673,7 @@ ul.menu-section-list {
 
 /*  /Slider Partners  */
 
-/*  Slider Modal Partners  */
+/*  Slider Modal Service  */
 
     .modal-service-slider-box {
         display: block;
@@ -1579,24 +1682,294 @@ ul.menu-section-list {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, .8);
         z-index: 10;
+    }
+
+    .modal-slide-service .item {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .modal-slide-service .slide-description {
+        display: block;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .modal-bg {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .8);
+    }
+
+    .close-modal-sl {
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 2%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        background: rgba(0, 0, 0, .4);
+        z-index: 10px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .close-modal-sl span {
+        display: block;
+        width: 35px;
+        height: 2px;
+        background: rgba(255, 255, 255, .7);
+
+        -webkit-transition-property: background;
+        -webkit-transition-duration: .3s;
+        -webkit-transition-timing-function: ease;
+
+        -moz-transition-property: background;
+        -moz-transition-duration: .3s;
+        -moz-transition-timing-function: ease;
+
+        -ms-transition-property: background;
+        -ms-transition-duration: .3s;
+        -ms-transition-timing-function: ease;
+
+        -o-transition-property: background;
+        -o-transition-duration: .3s;
+        -o-transition-timing-function: ease;
+
+        transition-property: background;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+
+    }
+
+    .close-modal-sl:link span,
+    .close-modal-sl:visited span {
+        background: rgba(255, 255, 255, .7);
+    }
+
+    .close-modal-sl:hover span {
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .close-modal-sl:active span {
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .close-modal-sl span:first-child {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        margin: 2px 0 0 7px;
+    }
+
+    .close-modal-sl span:nth-child(2) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        position: relative;
+        top: -2px;
+        left: 7px;
     }
 
     .center-position-slider {
         display: block;
-        max-width: 70%;
+        width: 70%;
         max-height: 80%;
+        position: relative;
         margin: 0 auto;
+        overflow: hidden;
     }
 
-    .service-modal-slider .item img {
+    .center-position-slider .btn {
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        margin: -30px 0 0 0;
+        cursor: pointer;
+        z-index: 10;
+        background: rgba(0, 0, 0, .4);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+
+        -webkit-transition-property: background;
+        -webkit-transition-duration: .5s;
+        -webkit-transition-timing-function: ease;
+
+        -moz-transition-property: background;
+        -moz-transition-duration: .5s;
+        -moz-transition-timing-function: ease;
+
+        -ms-transition-property: background;
+        -ms-transition-duration: .5s;
+        -ms-transition-timing-function: ease;
+
+        -o-transition-property: background;
+        -o-transition-duration: .5s;
+        -o-transition-timing-function: ease;
+
+        transition-property: background;
+        transition-duration: .5s;
+        transition-timing-function: ease;
+    }
+
+    .modal-slide-service .item {
         display: block;
         width: 100%;
         height: auto;
+        margin: 0 auto;
     }
 
-/*  /Slider Modal Partners  */
+    .modal-slide-service .item .slide-description {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 2% 1%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .6);
+    }
+
+    .modal-slide-service .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    .center-position-slider .prev-mod-slide > div {
+         margin: -10px 0 0px 16px;
+    }
+
+    .center-position-slider .next-mod-slide > div {
+        margin: 4px 0 0 22px;
+    }
+
+    .center-position-slider .btn > div span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background:rgba(255, 255, 255, .8);
+
+        -webkit-transition-property: background;
+        -webkit-transition-duration: .5s;
+        -webkit-transition-timing-function: ease;
+
+        -moz-transition-property: background;
+        -moz-transition-duration: .5s;
+        -moz-transition-timing-function: ease;
+
+        -ms-transition-property: background;
+        -ms-transition-duration: .5s;
+        -ms-transition-timing-function: ease;
+
+        -o-transition-property: background;
+        -o-transition-duration: .5s;
+        -o-transition-timing-function: ease;
+
+        transition-property: background;
+        transition-duration: .5s;
+        transition-timing-function: ease;
+    }
+
+    .center-position-slider .prev-mod-slide span:first-child {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: relative;
+        top: 16px;
+    }
+
+    .center-position-slider .prev-mod-slide span:nth-child(2) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .center-position-slider .next-mod-slide span:first-child {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: relative;
+        top: -12px;    
+    }
+
+    .center-position-slider .next-mod-slide span:nth-child(2) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .prev-mod-slide {
+        left: 0;
+    }
+
+    .next-mod-slide {
+        right: 0;
+    }
+
+    .center-position-slider .btn:link,
+    .center-position-slider .btn:visited {
+        background: rgba(0, 0, 0, .4);
+    }
+
+    .center-position-slider .btn:hover {
+        background: rgba(0, 0, 0, .8);
+    }
+
+    .center-position-slider .btn.active {
+        background: rgba(0, 0, 0, 1);
+    }
+
+    .center-position-slider .btn:active {
+        background: rgba(0, 0, 0, 1);
+    }
+
+
+
+    .center-position-slider .btn:link > div span,
+    .center-position-slider .btn:visited > div span {
+        background: rgba(255, 255, 255 , .8);
+    }
+
+    .center-position-slider .btn:hover > div span {
+        background: rgba(255, 255, 255 , 1);
+    }
+
+    .center-position-slider .btn.active > div span {
+        background: rgba(255, 255, 255 , 1);
+    }
+
+    .center-position-slider .btn:active > div span {
+        background: rgba(255, 255, 255 , 1);
+    }
+
+/*  /Slider Modal Service  */
 
 /*/Slide*/
 

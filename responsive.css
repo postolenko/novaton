@@ -233,6 +233,36 @@
 
 		/*--  Contacts Page  --*/
 
+		/*--  Inner SU Page  --*/
+
+		.service-miniatures .item {
+		    width: 75px;
+		}
+
+		.slider-partners .item {
+		    width: 120px;
+		    padding: 10px;
+		}
+
+	    .slide-service {
+	    	margin: 0 0 45px 0;
+	    	overflow: none;
+	    }
+
+		.slide-description {
+			display: block;
+			position: relative;
+			bottom: 0;
+			height: 0;
+			padding: 0;
+		}
+
+		.responsive-show-tab {
+			display: block;
+		}
+
+		/*--  /Inner SU Page  --*/
+
 		/*--  Responsive menu Nav  --*/
 
 	.page {
@@ -322,6 +352,25 @@
 
 	/*--  /Responsive menu Nav  --*/
 
+
+	/*--  Modal Slider  --*/
+
+	.center-position-slider {
+        display: block;
+        width: 94%;
+    }
+
+    .modal-slide-service .item .slide-description {
+        display: block;
+        width: 100%;
+        position: absolute !important;
+        left: 0;
+        bottom: 0;
+    }
+
+    /*--  /Modal Slider --*/
+
+
 	/*--  Footer  --*/
 
 	.footer {
@@ -335,3 +384,4 @@
 	/*--  /Footer  --*/
 
 }
+

@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     getMapSize();  // получение размера ширины карты на странице контактов
     getSliderWidth(); // получение размера ширины слайдера на странице Услуги
-
+    getModalSliderPostion();
 
     $(document).scroll(function() {
         
@@ -34,6 +34,19 @@ $(document).ready(function() {
 
         getSliderWidth(); // получение размера ширины слайдера на странице Услуги
 
+        getModalSliderPostion();  // получение центральной позиции модального слайдера
+
+        // ----------------------------------------------------------------
+
+        if ( bodyWidth >= 480 ) {  // В случае если описание слайда Услуги равен 0 и отступы тоже 
+                                   // приписываются нужные стили
+
+            $(".slide-description:eq("+ indexItemSlide +")").css({
+                                                                "height": "auto",
+                                                                "padding": "2% 9%"
+                                                            });
+
+        }
 
         //  ---------------------------------------------------------------
 
@@ -103,34 +116,26 @@ $(document).ready(function() {
     });
 
 
+    var persentsServiceMiniaturesWidth;
+    var persentsSliderPartnersWidth;
+
+
     // -----------------------------------------------------------------------------------------
 
    function getSliderWidth() {   // получение размера ширины слайдера на странице Услуги
 
-    var percentWidth;
+    persentsServiceMiniaturesWidth = ( $(".service-miniatures .item").outerWidth(true) / ( $(".slider-miniatures-box").width() * 0.01 ) ) * $(".service-miniatures .item").length * 1.1;
 
-    if(bodyWidth > 960) {
+    $(".service-miniatures").css({ "width" : persentsServiceMiniaturesWidth + "%" });
 
-        percentWidth = 60;
+    persentsSliderPartnersWidth = ( $(".slider-partners .item").outerWidth(true) / ( $(".slider-partners-block").width() * 0.01 ) ) * $(".slider-partners .item").length * 1.1;
 
-    } else {
-
-        percentWidth = 100;
-
-    }
-
-
-    $(".slider-for").width( ( $(window).width() / 100 ) * percentWidth );
-    $(".owl-carousel").width( ( $(window).width() / 100 ) * percentWidth );
-    $(".slide-partners").width( ( $(window).width() / 100 ) * percentWidth );
-    $(".slider-partners-block").width( ( $(window).width() / 100 ) * percentWidth );
-    $(".slider-block").width( ( $(window).width() / 100 ) * percentWidth );
+    $(".slider-partners").css({ "width" : persentsSliderPartnersWidth + "%" });
 
    } 
 
-// -----------------------------------------------------------------------------------------
 
-//  ---------------------------
+//  ----------------------------------------------------------------------------------------
 
 // получение центральной позиции меню на главной странице
 
@@ -145,6 +150,40 @@ $(document).ready(function() {
     }
 
 //  ---------------------------------------------------------------------
+
+//  Показать - скрыть модальный слайдер на странице Услуги
+
+    $(".slide-service .item").click(function() {
+
+        $(".modal-service-slider-box").fadeIn(300);
+
+        getModalSliderPostion();
+
+    });
+
+    $(".modal-bg, .close-modal-sl").click(function() {
+
+        $(".modal-service-slider-box").fadeOut(300);
+
+    });
+
+
+// -----------------------------------------------------------------------------------------
+
+    function getModalSliderPostion() {    // получение центральной позиции модального слайдера
+
+        $(".center-position-slider").css({"margin-top" : ( $(window).height() - $(".modal-slide-service").height() ) / 2 + "px" });
+
+        if ( parseInt( $(".center-position-slider").css("margin-top") ) <= 0 ) {
+
+            $(".center-position-slider").css({"margin-top" : 10 + "px"});
+
+        }
+
+    }
+
+
+// -----------------------------------------------------------------------------------------
 
 //  Показать-скрыть меню при клике на гамбургер
 
@@ -312,6 +351,50 @@ $(document).ready(function() {
     });
 
 
+// ---------------------------------------------------------
+
+var slideDescriptionHeight;
+var indexItemSlide;
+
+ $(".responsive-show-tab").click(function() {
+
+        if ( bodyWidth <= 480 ) {
+
+            indexItemSlide = $(".responsive-show-tab").index(this);
+
+            slideDescriptionHeight = $(".slide-description:eq("+ indexItemSlide +")").height();
+
+            if ( slideDescriptionHeight > 0 ) {
+
+                $(".slide-description:eq("+ indexItemSlide +")").animate({
+                                                                            "height": 0,
+                                                                            "padding": 0
+                                                                        }, 700);
+
+                $(".responsive-show-tab:eq("+ indexItemSlide +") .show-txt").text("Развернуть");
+
+                if( $(".arrow-desc").hasClass("up") ) {
+
+                    $(".arrow-desc").removeClass("up");
+
+                }
+                
+
+            } else {
+
+                // $(".slide-description:eq("+ indexItemSlide +")").animate({"height": 100 + "%"}, 700);
+                $(".slide-description:eq("+ indexItemSlide +")").css({
+                                                                        "height": "auto",
+                                                                        "padding": "10px 2px"
+                                                                    });
+                $(".arrow-desc").addClass("up");
+                $(".responsive-show-tab:eq("+ indexItemSlide +") .show-txt").text("Свернуть");
+
+            }
+
+        }    
+
+    });
 
 
 // ---------------------------------------------------------
