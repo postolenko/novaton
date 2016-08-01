@@ -1676,7 +1676,7 @@ ul.menu-section-list {
 /*  Slider Modal Service  */
 
     .modal-service-slider-box {
-        display: block;
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
