@@ -132,6 +132,15 @@ $(document).ready(function() {
 
     $(".slider-partners").css({ "width" : persentsSliderPartnersWidth + "%" });
 
+
+    // if(bodyWidth <= 960) {
+
+    //     $(".slider-miniatures-box").css({"width" : $(window).width() + "px"});
+
+    // }
+
+    
+
    } 
 
 
