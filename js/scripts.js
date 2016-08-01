@@ -264,9 +264,9 @@ $(document).ready(function() {
 
         indexItem = $( ".main-page-menu .nav-item" ).index( this );
 
-        if ( $(".main-page-menu .nav-item:eq("+ indexItem +") .inner-nav-block").height() <= 0 ) {
+        if ( $(".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").height() <= 0 ) {
 
-            innerNavHeight = $(".main-page-menu .nav-item:eq("+ indexItem +") .inner-nav").height();
+            innerNavHeight = $(".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block .inner-nav").height();
 
         } else {
 
@@ -274,7 +274,7 @@ $(document).ready(function() {
 
         }
 
-        $(".main-page-menu .nav-item .inner-nav-block:eq("+ indexItem +")").delay(600).stop().animate({"height": innerNavHeight + "px"}, 700);
+        $(".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").delay(600).stop().animate({"height": innerNavHeight + "px"}, 700);
 
     });
 
@@ -288,17 +288,22 @@ $(document).ready(function() {
 
         indexLeftItem = $( ".menu-section .nav-item" ).index( this );
 
-        if ( $( ".menu-section .nav-item:eq("+ indexLeftItem +") .inner-nav-block").height() <= 0 ) {
+        if($( ".menu-section .nav-item:eq("+ indexLeftItem +") > div").hasClass("inner-nav-block")) {
 
-            innerLeftNavHeight = $( ".menu-section .nav-item:eq("+ indexLeftItem +") .inner-nav").height();
+            if ( $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").height() <= 0 ) {
 
-        } else {
+                innerLeftNavHeight = $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block .inner-nav").height();
 
-            innerLeftNavHeight = 0;
+            } else {
+
+                innerLeftNavHeight = 0;
+
+            }
+
+            $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").delay(700).stop().animate({"height": innerLeftNavHeight + "px"}, 700);
 
         }
 
-        $( ".menu-section .nav-item .inner-nav-block:eq("+ indexLeftItem +")").delay(700).stop().animate({"height": innerLeftNavHeight + "px"}, 700);
 
     });
 
