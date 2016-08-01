@@ -88,7 +88,10 @@ $(document).ready(function() {
                 if( bodyWidth < 960 ) {
 
                     $(".page-content").css({"margin-left": 0 + "%"});
-                    $(".menu-tablet").css({"display": "none"});
+                    $(".menu-tablet").css({
+                                            "display": "none",
+                                            "margin-right" : -60 + "%"
+                                        });
                     $(".menu-mob").css({"display": "none"});
 
                 } else if (bodyWidth > 960) {
