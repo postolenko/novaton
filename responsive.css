@@ -166,10 +166,18 @@
 		display: none;
 	}
 
+	.close-su-page-box {
+	    display: block;
+	}
+
 	.page-h {
 	    font-size: 22px;
 	    line-height: 29px;
 	    padding: 50px 0 10px 0;
+	}
+
+	.before-x {
+	    padding: 10px 30px 30px 30px;
 	}
 
 	.link-h-1 {
@@ -242,6 +250,14 @@
 		.slider-partners .item {
 		    width: 120px;
 		    padding: 10px;
+		}
+
+		.slider-partners-block {
+		    width: 78%;
+		}
+
+		.our-partners-slider .btn-partner {
+		    width: 11%;
 		}
 
 	    .slide-service {

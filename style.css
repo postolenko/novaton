@@ -718,6 +718,90 @@ select::-ms-expand {
     padding: 0 4% 0 0;
 }
 
+
+/*--------------------*/
+
+.close-su-page-box {
+    display: none;
+    width: 100%;
+    height: 1px;
+    position: relative;
+}
+
+.close-su-page-btn {
+    display: block;
+    position: absolute;
+    top: 46px;
+    right: 0;
+    width: 36px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: none;
+}
+
+.close-su-page-btn span {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: rgba(255, 255, 255, .5);
+
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
+}
+
+.close-su-page-btn:link span,
+.close-su-page-btn:visited span {
+    background: rgba(255, 255, 255, .5);
+}
+
+.close-su-page-btn:hover span {
+    background: rgba(255, 255, 255, 1);
+}
+
+.close-su-page-btn:active span {
+    background: rgba(255, 255, 255, 1);
+}
+
+
+
+.close-su-page-btn span:first-child {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 13px 0 0 0;
+}
+
+.close-su-page-btn span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: -2px;
+}
+
+/*-----------------------------*/
+
 .page-h {
     font-family: "Circe", Arial, Verdana, sans-serif;
     font-size: 43px;
@@ -1483,9 +1567,21 @@ ul.menu-section-list {
 
 /*  Slider Partners  */
 
-    .slider-partners-block {
+    .our-partners-slider {
         display: block;
         width: 100%;
+        position: relative;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .slider-partners-block {
+        /*display: block;*/
+        /*display: inline-block;*/
+        display: table-cell;
+        vertical-align: middle;
+        /*width: 100%;*/
+        width: 88%;
         position: relative;
         padding: 20px 0;
         overflow: hidden;
@@ -1505,13 +1601,17 @@ ul.menu-section-list {
         text-align: center;
     }
 
-    .btn-partner {
-        display: block;
-        width: 41px;
+    .our-partners-slider .btn-partner {
+        /*display: block;*/
+        /*display: inline-block;*/
+        display: table-cell;
+        vertical-align: middle;
+        /*width: 41px;*/
+        width: 6%;
         height: 100%;
         background: rgba(0, 0, 0, 0);
-        position: absolute;
-        top: 0;
+        /*position: absolute;
+        top: 0;*/
         cursor: pointer;
         z-index: 9;
 
@@ -1536,7 +1636,7 @@ ul.menu-section-list {
         transition-timing-function: ease;
     }
 
-    .slider-partners-block .btn-partner span {
+    .our-partners-slider .btn-partner span {
         -webkit-transition-property: background;
         -webkit-transition-duration: .5s;
         -webkit-transition-timing-function: ease;
@@ -1558,47 +1658,51 @@ ul.menu-section-list {
         transition-timing-function: ease;
     }
 
-    .slider-partners-block .btn-partner:link,
-    .slider-partners-block .btn-partner:visited {
+    .our-partners-slider .btn-partner:link,
+    .our-partners-slider .btn-partner:visited {
         background: rgba(0, 0, 0, 0);
     }
 
-    .slider-partners-block .btn-partner:hover {
+    .our-partners-slider .btn-partner:hover {
          background: rgba(0, 0, 0, .6);
     }
 
-    .slider-partners-block .btn-partner.active,
-    .slider-partners-block .btn-partner:active {
+    .our-partners-slider .btn-partner.active,
+    .our-partners-slider .btn-partner:active {
          background: rgba(0, 0, 0, .9);
     }
 
-    .slider-partners-block .btn-partner:link span,
-    .slider-partners-block .btn-partner:visited span {
+    .our-partners-slider .btn-partner:link span,
+    .our-partners-slider .btn-partner:visited span {
         background: rgba(255, 255, 255, 1);
     }
 
-    .slider-partners-block .btn-partner:hover span {
+    .our-partners-slider .btn-partner:hover span {
         background: rgba(255, 255, 255, 1);
     }
 
-    .slider-partners-block .btn-partner.active span,
-    .slider-partners-block .btn-partner:active span {
+    .our-partners-slider .btn-partner.active span,
+    .our-partners-slider .btn-partner:active span {
         background: rgba(255, 255, 255, 1);
     }
 
     .btn-partner > div {
-        position: absolute;
+        position: relative;
         display: block;
         top: 50%;
         z-index: 9;
     }
 
     .prev-partner > div {
-        margin: -10px 0 0 10px;
+        position: relative;
+        top: -10px;
+        left: 24%;
     }
 
     .next-partner > div {
-        margin: 4px 0 0 11px;
+        position: relative;
+        top: 4px;
+        right: -25%;
     }
 
     .prev-partner {
@@ -1609,14 +1713,14 @@ ul.menu-section-list {
         right: 0;
     }
 
-    .slider-partners-block .btn-partner > div span {
+    .our-partners-slider .btn-partner > div span {
         display: block;
         width: 20px;
         height: 2px;
         background:rgba(255, 255, 255, .8);
     }
 
-    .slider-partners-block .prev-partner span:first-child {
+    .our-partners-slider .prev-partner span:first-child {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
@@ -1625,14 +1729,14 @@ ul.menu-section-list {
         top: 16px;
     }
 
-    .slider-partners-block .prev-partner span:nth-child(2) {
+    .our-partners-slider .prev-partner span:nth-child(2) {
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
 
-    .slider-partners-block .next-partner span:first-child {
+    .our-partners-slider .next-partner span:first-child {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
@@ -1641,7 +1745,7 @@ ul.menu-section-list {
         top: -12px;    
     }
 
-    .slider-partners-block .next-partner span:nth-child(2) {
+    .our-partners-slider .next-partner span:nth-child(2) {
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
