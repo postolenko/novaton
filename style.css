@@ -98,18 +98,17 @@ body {
     left: 0;
     z-index: -1;
 
-
     background-image: url(img/index_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.bg-second:before {
+.bg-second {
     background-image: url(img/contacts_bg.jpg);
 }
 
-.bg-inner-su:before {
+.bg-inner-su {
     background-image: url(img/inner_su_bg.jpg);
 }
 
