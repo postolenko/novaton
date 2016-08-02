@@ -192,7 +192,8 @@ h3 {
     font-weight: 400;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 10px 0;
+    /*padding: 10px 0;*/
+    padding: 35px 0 0 0;
 }
 
 p {
@@ -1231,7 +1232,7 @@ ul.menu-section-list {
         background-color: rgba(255, 255, 255, .3);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;  
+        background-position: center;
     }
 
     .responsive-show-tab {
@@ -2243,40 +2244,19 @@ ul.menu-section-list {
     color: #ffffff;
     text-decoration: underline;
     margin: 0 0 0 1%;
-
-    -webkit-transition-property: color;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: color;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: color;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: color;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: color;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-
 }
 
 .map-box ul li a:link,
 .map-box ul li a:visited {
-    color: #ffffff;
+    text-decoration: underline;
 }
 
 .map-box ul li a:hover {
-    color: #2610f4;
+    text-decoration: none;
 }
 
 .map-box ul li a:active {
-    color: #2610f4;
+    text-decoration: none;
 }
 
 .map-box {
