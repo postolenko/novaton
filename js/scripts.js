@@ -19,12 +19,6 @@ $(document).ready(function() {
         
             // getScrollToTopBtn();   // при необходимости эту функцию можно использовать для отображения кнопки скролла
                                       // для прокрутки страницы в самый вверх
-
-        $(".background").css({
-            "width": $(window).width() + "px",
-            "height": $(window).height() + "px"
-        });
-        
     });
 
     $(window).resize(function() {
@@ -41,11 +35,6 @@ $(document).ready(function() {
         getSliderWidth(); // получение размера ширины слайдера на странице Услуги
 
         getModalSliderPostion();  // получение центральной позиции модального слайдера
-
-        $(".background").css({
-            "width": $(window).width() + "px",
-            "height": $(window).height() + "px"
-        });
 
         // ----------------------------------------------------------------
 
@@ -125,11 +114,6 @@ $(document).ready(function() {
 
             }
 
-    });
-
-    $(".background").css({
-        "width": $(window).width() + "px",
-        "height": $(window).height() + "px"
     });
 
     // -----------------------------------------------------------------------------------------
