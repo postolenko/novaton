@@ -19,6 +19,12 @@ $(document).ready(function() {
         
             // getScrollToTopBtn();   // при необходимости эту функцию можно использовать для отображения кнопки скролла
                                       // для прокрутки страницы в самый вверх
+
+        $(".background").css({
+            "width": $(window).width() + "px",
+            "height": $(window).height() + "px"
+        });
+        
     });
 
     $(window).resize(function() {
