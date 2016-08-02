@@ -346,6 +346,13 @@ $(document).ready(function() {
             if ($("#map").height() > mapHeightMob ) {
 
                 $("#map").animate({"height": mapHeightMob + "px"}, 700);
+
+                setTimeout(function() {
+
+                    initMap();
+
+                }, 710);
+                
                 $(".show-txt").text("Развернуть");
 
                 if( $(".arrow-map").hasClass("up") ) {
@@ -358,6 +365,13 @@ $(document).ready(function() {
             } else {
 
                 $("#map").animate({"height": 570 + "px"}, 700);
+
+                setTimeout(function() {
+
+                    initMap();
+
+                }, 710);
+
                 $(".arrow-map").addClass("up");
                 $(".show-txt").text("Свернуть");
 
