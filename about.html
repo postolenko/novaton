@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.hoverIntent.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 
@@ -485,7 +486,93 @@
 
 
 		<script src="js/scripts.js"></script>
-  
+
+  	<!-- 	<script>
+
+	  		$(document).ready(function() {
+
+				var indexLeftItem;
+				var innerLeftNavItemHeight;
+
+
+				$(".menu-section .nav-item").hoverIntent({
+								    over: makeTall,
+								    out: makeShort,
+								    timeout: 500
+								});
+
+				function makeTall(){
+
+					indexLeftItem = $( ".menu-section .nav-item" ).index( this );
+
+					if($( ".menu-section .nav-item:eq("+ indexLeftItem +") > div").hasClass("inner-nav-block")) {
+
+            			if ( $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").height() <= 0 ) {
+
+                			innerLeftNavItemHeight = $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block .inner-nav").height();
+
+                		}
+
+                	}
+
+
+						$(".nav-item:eq("+ indexLeftItem +") .inner-nav-block").animate({"height":innerLeftNavItemHeight},700);
+
+				}
+
+        		function makeShort(){
+
+        			indexLeftItem = $( ".nav-item" ).index( this );
+
+        			$(".menu-section .nav-item:eq("+ indexLeftItem +") .inner-nav-block").animate({"height":0},700);
+
+        		}
+
+
+
+
+        		var indexItem;
+        		var innerMainNavItemHeight;
+
+				$(".main-page-menu .nav-item").hoverIntent({
+								    over: makeTall,
+								    out: makeShort,
+								    timeout: 500
+								});
+
+				function makeTall(){
+
+					indexItem = $( ".main-page-menu .nav-item" ).index( this );
+
+					if($( ".main-page-menu .nav-item:eq("+ indexItem +") > div").hasClass("inner-nav-block")) {
+
+            			if ( $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").height() <= 0 ) {
+
+                			innerMainNavItemHeight = $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block .inner-nav").height();
+
+                		}
+
+                	}
+
+
+						$(".main-page-menu .nav-item:eq("+ indexItem +") .inner-nav-block").animate({"height":innerMainNavItemHeight},700);
+
+				}
+
+        		function makeShort(){
+
+        			indexItem = $( ".nav-item" ).index( this );
+
+        			$(".main-page-menu .nav-item:eq("+ indexItem +") .inner-nav-block").animate({"height":0},700);
+
+        		}
+
+
+	  		});
+
+
+  			
+  		</script> -->
 	</div>
 
 </body>

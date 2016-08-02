@@ -11,6 +11,12 @@ $(document).ready(function() {
 
     var mapHeightMob = $("#map").height();  // высота карты на странице "Контакты"
 
+    var indexLeftItem;  // Индекс Навигационного Меню
+    var innerLeftNavItemHeight; // Высота навигационного меню второго уровня 
+
+    var indexItem;  // Индекс Пункта меню  На Главной Странице
+    var innerMainNavItemHeight; // Высота навигационного меню второго уровня на Главной Странице
+
     getMapSize();  // получение размера ширины карты на странице контактов
     getSliderWidth(); // получение размера ширины слайдера на странице Услуги
     getModalSliderPostion();
@@ -263,53 +269,20 @@ $(document).ready(function() {
 // ------------------
 
 
-    var indexItem;
-    var innerNavHeight;
+    // var indexLeftItem;
+    // var innerLeftNavItemHeight;
 
-// Поведение Центрально Меню на Главной Странице при наведении курсора. 
-
-    $( ".main-page-menu .nav-item" ).bind({
-
-      mouseenter: function() {
-
-        indexItem = $( ".main-page-menu .nav-item" ).index( this );
-
-        if($( ".main-page-menu .nav-item:eq("+ indexItem +") > div").hasClass("inner-nav-block")) {
-
-            if ( $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").height() <= 0 ) {
-
-                innerNavHeight = $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block .inner-nav").height();
-
-                var hoverTimeMainMenu = setTimeout(function() {
-
-                    $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").stop().animate({"height": innerNavHeight + "px"}, 800);
-
-                }, 500);
-
-            }                    
-
-        }
-
-      },
-      mouseleave: function() {
-
-        $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").delay(500).stop().animate({"height": 0 + "px"}, 800);
-      
-        clearTimeout(hoverTimeMainMenu);
-
-      }
-
-    });
-
-// Поведение Навигационного Меню при наведении курсора. 
-
-    var indexLeftItem;
-    var innerLeftNavHeight;
+    // var indexItem;
+    // var innerMainNavItemHeight;
 
 
-    $( ".menu-section .nav-item" ).bind({
+    $(".menu-section .nav-item").hoverIntent({
+                        over: makeTallMenuItemSection,
+                        out: makeShortMenuItemSection,
+                        timeout: 500
+                    });
 
-      mouseenter: function() {
+    function makeTallMenuItemSection(){
 
         indexLeftItem = $( ".menu-section .nav-item" ).index( this );
 
@@ -317,28 +290,63 @@ $(document).ready(function() {
 
             if ( $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").height() <= 0 ) {
 
-                innerLeftNavHeight = $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block .inner-nav").height();
+                innerLeftNavItemHeight = $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block .inner-nav").height();
 
-                var hoverTimeMenuSection = setTimeout(function() {
-
-                    $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").stop().animate({"height": innerLeftNavHeight + "px"}, 800);
-
-                }, 500);
-                
-            }                    
+            }
 
         }
 
-      },
-      mouseleave: function() {
 
-        $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").delay(500).stop().animate({"height": 0 + "px"}, 800);
-      
-        clearTimeout(hoverTimeMenuSection);
+            $(".nav-item:eq("+ indexLeftItem +") .inner-nav-block").animate({"height":innerLeftNavItemHeight},700);
 
-      }
+    }
 
-    });
+    function makeShortMenuItemSection(){
+
+        indexLeftItem = $( ".nav-item" ).index( this );
+
+        $(".menu-section .nav-item:eq("+ indexLeftItem +") .inner-nav-block").animate({"height":0},700);
+
+    }
+
+
+
+    // ----------------------------------------------
+
+
+    $(".main-page-menu .nav-item").hoverIntent({
+                        over: makeTallMainMenuItem,
+                        out: makeShortMainMenuItem,
+                        timeout: 500
+                    });
+
+    function makeTallMainMenuItem(){
+
+        indexItem = $( ".main-page-menu .nav-item" ).index( this );
+
+        if($( ".main-page-menu .nav-item:eq("+ indexItem +") > div").hasClass("inner-nav-block")) {
+
+            if ( $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").height() <= 0 ) {
+
+                innerMainNavItemHeight = $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block .inner-nav").height();
+
+            }
+
+        }
+
+
+            $(".main-page-menu .nav-item:eq("+ indexItem +") .inner-nav-block").animate({"height":innerMainNavItemHeight},700);
+
+    }
+
+    function makeShortMainMenuItem(){
+
+        indexItem = $( ".main-page-menu .nav-item" ).index( this );
+
+        $(".main-page-menu .nav-item:eq("+ indexItem +") .inner-nav-block").animate({"height":0},700);
+
+    }
+
 
 // ----------------------------------------------------
 
