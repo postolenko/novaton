@@ -89,9 +89,8 @@ body {
 
 /*------------------*/
 
-.wrapper:before {
+.background {
     display: block;
-    content: "";
     width: 100%;
     height: 100%;
     position: fixed;
@@ -106,11 +105,11 @@ body {
     background-size: cover;
 }
 
-.wrapper.bg-second:before {
+.bg-second:before {
     background-image: url(img/contacts_bg.jpg);
 }
 
-.wrapper.bg-inner-su:before {
+.bg-inner-su:before {
     background-image: url(img/inner_su_bg.jpg);
 }
 
