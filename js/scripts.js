@@ -268,32 +268,62 @@ $(document).ready(function() {
 
 // Поведение Центрально Меню на Главной Странице при наведении курсора. 
 
+    $( ".main-page-menu .nav-item" ).bind({
 
-    $(".main-page-menu .nav-item").hover(function(){
+      mouseenter: function() {
 
         indexItem = $( ".main-page-menu .nav-item" ).index( this );
 
-        if ( $(".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").height() <= 0 ) {
+        if($( ".main-page-menu .nav-item:eq("+ indexItem +") > div").hasClass("inner-nav-block")) {
 
-            innerNavHeight = $(".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block .inner-nav").height();
+            if ( $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").height() <= 0 ) {
 
-        } else {
+                innerNavHeight = $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block .inner-nav").height();
 
-            innerNavHeight = 0;
+                $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").delay(300).stop().animate({"height": innerNavHeight + "px"}, 700);
+
+            }                    
 
         }
 
-        $(".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").delay(300).stop().animate({"height": innerNavHeight + "px"}, 700);
+      },
+      mouseleave: function() {
+
+        $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").delay(300).stop().animate({"height": 0 + "px"}, 700);
+      
+      }
 
     });
 
 
-// Поведение Навигиционного Меню при наведении курсора. 
+    // $(".main-page-menu .nav-item").hover(function(){
+
+    //     indexItem = $( ".main-page-menu .nav-item" ).index( this );
+
+    //     if ( $(".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").height() <= 0 ) {
+
+    //         innerNavHeight = $(".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block .inner-nav").height();
+
+    //     } else {
+
+    //         innerNavHeight = 0;
+
+    //     }
+
+    //     $(".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").delay(300).stop().animate({"height": innerNavHeight + "px"}, 700);
+
+    // });
+
+
+// Поведение Навигационного Меню при наведении курсора. 
 
     var indexLeftItem;
     var innerLeftNavHeight;
 
-    $( ".menu-section .nav-item").hover(function(){
+
+    $( ".menu-section .nav-item" ).bind({
+
+      mouseenter: function() {
 
         indexLeftItem = $( ".menu-section .nav-item" ).index( this );
 
@@ -303,18 +333,75 @@ $(document).ready(function() {
 
                 innerLeftNavHeight = $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block .inner-nav").height();
 
-            } else {
+                $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").delay(300).stop().animate({"height": innerLeftNavHeight + "px"}, 700);
 
-                innerLeftNavHeight = 0;
-
-            }
-
-            $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").delay(300).animate({"height": innerLeftNavHeight + "px"}, 700);
+            }                    
 
         }
 
+      },
+      mouseleave: function() {
+
+        $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").delay(300).stop().animate({"height": 0 + "px"}, 700);
+      
+      }
 
     });
+
+
+    // $( ".menu-section .nav-item" ).bind({ 
+
+    //   mouseenter: function() {
+    //     // Do something on click
+    //     indexLeftItem = $( ".menu-section .nav-item" ).index( this );
+    //     console.log(indexLeftItem);
+
+    //     if($( ".menu-section .nav-item:eq("+ indexLeftItem +") > div").hasClass("inner-nav-block")) {
+
+    //         // if ( $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").height() <= 0 ) {
+
+    //         innerLeftNavHeight = $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block .inner-nav").height();
+
+    //         // }
+
+    //         $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").delay(500).animate({"height": innerLeftNavHeight + "px"}, 700);
+
+    //     }
+
+    //   },
+    //   mouseleave: function() {
+    //     // Do something on mouseenter
+
+    //     $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").delay(500).animate({"height": 0 + "px"}, 700);
+
+    //      console.log("2");
+
+    //   }
+
+    // });
+
+    // $( ".menu-section .nav-item").hover(function(){
+
+    //     indexLeftItem = $( ".menu-section .nav-item" ).index( this );
+
+    //     if($( ".menu-section .nav-item:eq("+ indexLeftItem +") > div").hasClass("inner-nav-block")) {
+
+    //         if ( $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").height() <= 0 ) {
+
+    //             innerLeftNavHeight = $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block .inner-nav").height();
+
+    //         } else {
+
+    //             innerLeftNavHeight = 0;
+
+    //         }
+
+    //         $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").delay(300).animate({"height": innerLeftNavHeight + "px"}, 700);
+
+    //     }
+
+
+    // });
 
 // ----------------------------------------------------
 
