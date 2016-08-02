@@ -339,6 +339,8 @@ $(document).ready(function() {
 
     mapHeightMob = $("#map").height();
 
+    var countCall = 0;
+
     $(".show-map").click(function() {
 
         if ( bodyWidth <= 480 ) {
@@ -347,12 +349,6 @@ $(document).ready(function() {
 
                 $("#map").animate({"height": mapHeightMob + "px"}, 700);
 
-                setTimeout(function() {
-
-                    initMap();
-
-                }, 710);
-                
                 $(".show-txt").text("Развернуть");
 
                 if( $(".arrow-map").hasClass("up") ) {
@@ -364,13 +360,19 @@ $(document).ready(function() {
 
             } else {
 
-                $("#map").animate({"height": 570 + "px"}, 700);
+                $("#map").animate({"height": 470 + "px"}, 700);
 
-                setTimeout(function() {
+                if(countCall <= 0) {
 
-                    initMap();
+                    setTimeout(function() {
 
-                }, 710);
+                        initMap();
+
+                    }, 710);
+
+                }
+
+                countCall++;            
 
                 $(".arrow-map").addClass("up");
                 $(".show-txt").text("Свернуть");
