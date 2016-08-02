@@ -283,7 +283,7 @@ $(document).ready(function() {
 
         }
 
-        $(".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").delay(600).stop().animate({"height": innerNavHeight + "px"}, 700);
+        $(".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").delay(300).stop().animate({"height": innerNavHeight + "px"}, 700);
 
     });
 
@@ -309,7 +309,7 @@ $(document).ready(function() {
 
             }
 
-            $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").delay(700).stop().animate({"height": innerLeftNavHeight + "px"}, 700);
+            $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").delay(300).animate({"height": innerLeftNavHeight + "px"}, 700);
 
         }
 
