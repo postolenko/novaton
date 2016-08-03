@@ -106,11 +106,13 @@ body {
 }*/
 
 body {
-    font-smoothing: subpixel-antialiased !important;
+    /*font-smoothing: subpixel-antialiased !important;*/
+    font-smoothing: antialiased !important;
     backface-visibility: hidden;
     backface-visibility:    hidden;
     backface-visibility:     hidden;
-    -webkit-font-smoothing: subpixel-antialiased !important;
+    /*-webkit-font-smoothing: subpixel-antialiased !important;*/
+    -webkit-font-smoothing: antialiased !important;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility:    hidden;
     -ms-backface-visibility:     hidden;
