@@ -69,7 +69,7 @@ body {
 }
 
 
-@mixin font-smoothing($value: on) {
+/*@mixin font-smoothing($value: on) {
     @if $value == on {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -78,17 +78,17 @@ body {
         -webkit-font-smoothing: subpixel-antialiased;
         -moz-osx-font-smoothing: auto;
     }
-}
+}*/
 
 body {
-/*    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-font-smoothing: subpixel-antialiased !important;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility:    hidden;
-    -ms-backface-visibility:     hidden;*/
+    -ms-backface-visibility:     hidden;
 }
 
 .wrapper {
-    display: table; 
+    display: table;
     /*height: 100%;*/
     min-height: 100%;
     min-width: 100%;
