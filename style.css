@@ -113,6 +113,7 @@ body {
     backface-visibility:     hidden;
     /*-webkit-font-smoothing: subpixel-antialiased !important;*/
     -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility:    hidden;
     -ms-backface-visibility:     hidden;
