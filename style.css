@@ -12,7 +12,7 @@
         url("fonts/Circe-Bold.woff") format("woff"),
         url("fonts/Circe-Bold.ttf") format("truetype"),
         url("fonts/Circe-Bold.svg#Circe-Bold") format("svg");
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -38,6 +38,31 @@
         url("fonts/Circe-Regular.svg#Circe-Regular") format("svg");
     font-weight: normal;
     font-style: normal;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) {
+
+    @font-face {
+        font-family: "Circe";
+        src: url("fonts/Circe-Regular.svg#Circe-Regular") format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+     @font-face {
+        font-family: "Circe";
+        src: url("fonts/Circe-Bold.svg#Circe-Bold") format("svg");
+        font-weight: bold;
+        font-style: normal;
+    }
+
+     @font-face {
+        font-family: "Circe";
+        src: url("fonts/Circe-Light.svg#Circe-Light") format("svg");
+        font-weight: 300;
+        font-style: normal;
+    }
+
 }
 
 
@@ -81,6 +106,10 @@ body {
 }*/
 
 body {
+    font-smoothing: subpixel-antialiased !important;
+    backface-visibility: hidden;
+    backface-visibility:    hidden;
+    backface-visibility:     hidden;
     -webkit-font-smoothing: subpixel-antialiased !important;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility:    hidden;
