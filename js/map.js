@@ -43,9 +43,9 @@ if( document.getElementsByClassName("map-box")[0] ) {
 
 				marker = new google.maps.Marker({
 					map: map,
-					draggable: true,
+					// draggable: true,
 					animation: google.maps.Animation.DROP,
-					position: {lat: 59.9711252, lng: 30.2976},
+					position: {lat: 59.97045, lng: 30.2976},
 					map: map,
 					icon: image,
 					title: 'Novaton'

@@ -1,9 +1,27 @@
 /*@media only screen and (max-width: 768px) {*/
+.page-main .menu-tablet,
+.page-contacts .menu-tablet {
+	display: none !important;
+}
 
 @media only screen and (max-width: 960px) {
 
 	.row {
-		padding: 0 1%;
+		padding: 0 15px;
+	}
+
+	.visible-768 {
+	    display: inline-block !important;
+	}
+
+	.page-main .menu-tablet,
+	.page-contacts .menu-tablet {
+		display: block !important;
+	}
+
+	.adaptive-font-size {
+		font-size: 22px;
+		line-height: 26px;
 	}
 
 	.main-h-box,
@@ -14,9 +32,17 @@
 
 	/*-- Header --*/
 
+	.header {
+	    padding: 16px 0 9px 0;
+	}
+
 	.logo-box {
 	    display: inline-block;
 	    vertical-align: middle;
+	}
+
+	.logo-img {
+	    width: 226px;
 	}
 
 	.header-left-col {
@@ -53,7 +79,8 @@
 	.respmenubtn-box {
 		display: inline-block;
 		vertical-align: middle;
-		width: 12%;
+		width: 20%;
+		/*margin: 0 -20px 0 0;*/
 	}
 
 	/*-- /Header --*/
@@ -86,6 +113,23 @@
     	margin-right: -60%;
 	}
 
+	.menu-section .nav-item {
+	    opacity: 1;
+	}
+
+	.menu-section .nav-item .inner-nav {
+	    opacity: .7 !important;
+	}
+
+	.menu-section .link-h-1 {
+	    font-family: "Circe Bold", Arial, Verdana, sans-serif;
+	    font-size: 15px;
+	}
+
+	.inner-nav li a {
+		line-height: 15px;
+	}
+
 	.menu-mob {
 		display: none !important;
 	}
@@ -101,10 +145,23 @@
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
+
+	.logo-img {
+	    width: 182px;
+	}
+
+	.visible-320 {
+	    display: inline-block !important;
+	}
 
 	p {
 	    padding: 20px 0;
+	}
+
+	.adaptive-font-size {
+	    font-size: 18px;
+	    line-height: 26px;
 	}
 
 	ul {
@@ -118,6 +175,10 @@
 	.page {
 	    padding: 0;
 	    text-align: center;
+	}
+
+	.page p {
+		text-align: left;
 	}
 
 	.header-left-col {
@@ -138,7 +199,7 @@
 
 	.respmenubtn-box {
 	    position: relative;
-	    right: 10%;
+	    /*right: 10%;*/
 	}
 
 	.contacts-responsive {
@@ -173,7 +234,7 @@
 	.page-h {
 	    font-size: 22px;
 	    line-height: 29px;
-	    padding: 50px 0 10px 0;
+	    padding: 50px 0 0 0;
 	}
 
 	.before-x {
@@ -230,12 +291,19 @@
 				padding: 10px 0;
 			}
 
-			.map-btn span:first-child {
-			    margin: 13px 0 0 0;
+			.map-btn {
+			    display: block;
+			    float: right;
+			    width: 23px;
+			    height: 23px;
 			}
 
-			.map-btn span:nth-child(2) {
-			    top: -2px;
+			.map-btn-x {
+				display: none !important;
+			}
+
+			.map-btn img.map-btn-x-320 {
+			    display: block;
 			}
 
 

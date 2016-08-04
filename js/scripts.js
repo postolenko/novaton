@@ -17,9 +17,14 @@ $(document).ready(function() {
     var indexItem;  // Индекс Пункта меню  На Главной Странице
     var innerMainNavItemHeight; // Высота навигационного меню второго уровня на Главной Странице
 
+
+    var quotesCount;
+
     getMapSize();  // получение размера ширины карты на странице контактов
     getSliderWidth(); // получение размера ширины слайдера на странице Услуги
     getModalSliderPostion();
+
+    getScobeHeight();
 
     $(document).scroll(function() {
         
@@ -42,9 +47,11 @@ $(document).ready(function() {
 
         getModalSliderPostion();  // получение центральной позиции модального слайдера
 
+        getScobeHeight();
+
         // ----------------------------------------------------------------
 
-        if ( bodyWidth >= 480 ) {  // В случае если описание слайда Услуги равен 0 и отступы тоже 
+        if ( bodyWidth >= 600 ) {  // В случае если описание слайда Услуги равен 0 и отступы тоже 
                                    // приписываются нужные стили
 
             $(".slide-description:eq("+ indexItemSlide +")").css({
@@ -60,13 +67,13 @@ $(document).ready(function() {
 
             if ( $(".respmenubtn").hasClass("respmenubtn-active") ) {
 
-                if( bodyWidth < 480 ) {
+                if( bodyWidth < 600 ) {
 
                     $(".page-content").css({"margin-left": 0 + "%"});
                     $(".menu-tablet").css({"display": "none"});
                     $(".menu-mob").css({"height" : "auto"});
 
-                } else if ( bodyWidth > 480 && bodyWidth < 960 ) {
+                } else if ( bodyWidth > 600 && bodyWidth < 960 ) {
 
                     $(".page-content").css({"margin-left": -60 + "%"});
 
@@ -111,7 +118,7 @@ $(document).ready(function() {
 
                     if( $(".page-content").hasClass("main-page-menu") ||  $(".page-content").hasClass("contacts-page") ) {
 
-                        $(".menu-tablet").css({"display": "none"});
+                        $(".menu-tablet").css({"display": "none !important"});
 
                     }
 
@@ -149,6 +156,30 @@ $(document).ready(function() {
 
    } 
 
+
+//  ----------------------------------------------------------------------------------------
+
+    
+
+    function getScobeHeight() {
+
+        for( quotesCount = 0;  quotesCount <= $(".quote").length - 1;  quotesCount++) {
+
+            if ( $(".quote:eq("+ quotesCount +") span").hasClass("scobe") ) {
+
+                if( $(".quote:eq("+ quotesCount +") .scobe img").length == 0 ) {
+
+                    $(".quote:eq("+ quotesCount +") .scobe").append("<img src='img/skoba.svg' alt='Quote'>");
+
+                }                    
+
+                $(".quote:eq("+ quotesCount +") .scobe img").outerHeight( $(".quote").height() );
+
+            }
+
+        }
+
+    }
 
 //  ----------------------------------------------------------------------------------------
 
@@ -206,7 +237,7 @@ $(document).ready(function() {
 
             $(".respmenubtn").toggleClass("respmenubtn-active");
 
-            if(bodyWidth > 480) {
+            if(bodyWidth > 600) {
 
                 if( $(".menu-section").hasClass("menu-tablet") ) {
 
@@ -278,7 +309,7 @@ $(document).ready(function() {
 
     $(".menu-section .nav-item").hoverIntent({
                         over: makeTallMenuItemSection,
-                        out: makeShortMenuItemSection,
+                        // out: makeShortMenuItemSection,
                         timeout: 500
                     });
 
@@ -316,7 +347,7 @@ $(document).ready(function() {
 
     $(".main-page-menu .nav-item").hoverIntent({
                         over: makeTallMainMenuItem,
-                        out: makeShortMainMenuItem,
+                        // out: makeShortMainMenuItem,
                         timeout: 500
                     });
 
@@ -324,18 +355,18 @@ $(document).ready(function() {
 
         indexItem = $( ".main-page-menu .nav-item" ).index( this );
 
-        if($( ".main-page-menu .nav-item:eq("+ indexItem +") > div").hasClass("inner-nav-block")) {
+        if($( ".main-page-menu .nav-item:eq("+ indexItem +") > div").hasClass("page-menu-hover-block")) {
 
-            if ( $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block").height() <= 0 ) {
+            if ( $( ".main-page-menu .nav-item:eq("+ indexItem +") > .page-menu-hover-block").height() <= 0 ) {
 
-                innerMainNavItemHeight = $( ".main-page-menu .nav-item:eq("+ indexItem +") > .inner-nav-block .inner-nav").height();
+                innerMainNavItemHeight = $( ".main-page-menu .nav-item:eq("+ indexItem +") > .page-menu-hover-block .link-h-desc").outerHeight(true);
 
             }
 
         }
 
 
-            $(".main-page-menu .nav-item:eq("+ indexItem +") .inner-nav-block").animate({"height":innerMainNavItemHeight},700);
+            $(".main-page-menu .nav-item:eq("+ indexItem +") .page-menu-hover-block").animate({"height":innerMainNavItemHeight},700);
 
     }
 
@@ -343,7 +374,7 @@ $(document).ready(function() {
 
         indexItem = $( ".main-page-menu .nav-item" ).index( this );
 
-        $(".main-page-menu .nav-item:eq("+ indexItem +") .inner-nav-block").animate({"height":0},700);
+        $(".main-page-menu .nav-item:eq("+ indexItem +") .page-menu-hover-block").animate({"height":0},700);
 
     }
 
@@ -354,7 +385,7 @@ $(document).ready(function() {
 
     function getMapSize() {   // получение размера ширины карты на странице контактов
 
-        if(bodyWidth >= 480) {
+        if(bodyWidth >= 600) {
 
             $("#map").height(570);
 
@@ -372,7 +403,7 @@ $(document).ready(function() {
 
     $(".show-map").click(function() {
 
-        if ( bodyWidth <= 480 ) {
+        if ( bodyWidth <= 600 ) {
 
             if ($("#map").height() > mapHeightMob ) {
 
@@ -420,7 +451,7 @@ var indexItemSlide;
 
  $(".responsive-show-tab").click(function() {
 
-        if ( bodyWidth <= 480 ) {
+        if ( bodyWidth <= 600 ) {
 
             indexItemSlide = $(".responsive-show-tab").index(this);
 
