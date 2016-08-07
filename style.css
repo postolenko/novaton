@@ -225,7 +225,7 @@ h1 {
     font-family: "Circe Bold", Arial, Verdana, sans-serif;
     font-size: 13px;
     line-height: 28px;
-    font-weight: 700;
+    font-weight: normal;
 }
 
 h2 {
@@ -250,7 +250,7 @@ h3 {
 
 .bold-txt {
     font-family: "Circe Bold", Arial, Verdana, sans-serif;
-    font-weight: 700;
+    font-weight: normal;
 }
 
 .adaptive-font-size {
@@ -539,7 +539,7 @@ select::-ms-expand {
     font-family: "Circe Bold", Arial, Verdana, sans-serif;
     font-size: 18px;
     line-height: 20px;
-    font-weight: 700;
+    font-weight: normal;
     color: #818286;
     text-transform: uppercase;
     padding: 0;
@@ -920,7 +920,7 @@ select::-ms-expand {
     font-family: "Circe Bold", Arial, Verdana, sans-serif;
     font-size: 43px;
     line-height: 53px;
-    font-weight: 700;
+    font-weight: normal;
     color: #ffffff;
     text-transform: uppercase;
     padding: 10px 0 30px 0;
@@ -1083,7 +1083,7 @@ select::-ms-expand {
     font-family: "Circe Bold", Arial, Verdana, sans-serif;
     font-size: 22px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: normal;
     color: #ffffff;
 }
 
@@ -1322,7 +1322,7 @@ select::-ms-expand {
     font-family: "Circe Bold", Arial, Verdana, sans-serif;
     font-size: 18px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: normal;
     color: #ffffff;
     padding: 0;
 }
@@ -2335,7 +2335,7 @@ ul.menu-section-list {
     font-family: "Circe Bold", Arial, Verdana, sans-serif;
     font-size: 24px;
     line-height: 32px;
-    font-weight: 700;
+    font-weight: normal;
     color: #ffffff;
     text-transform: uppercase;
     padding: 0 0 5px 0;
