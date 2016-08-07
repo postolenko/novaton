@@ -50,14 +50,14 @@
     }
 
      @font-face {
-        font-family: "Circe";
+        font-family: "Circe Bold";
         src: url("fonts/Circe-Bold.svg#Circe-Bold") format("svg");
-        font-weight: bold;
+        font-weight: 700;
         font-style: normal;
     }
 
      @font-face {
-        font-family: "Circe";
+        font-family: "Circe Light";
         src: url("fonts/Circe-Light.svg#Circe-Light") format("svg");
         font-weight: 300;
         font-style: normal;
