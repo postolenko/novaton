@@ -953,7 +953,8 @@ select::-ms-expand {
     width: 33.33%;
     margin: 10px 0;
     padding: 2%;
-    max-height: 165px;
+    max-height: 170px;
+    text-align: center;
 }
 
 
@@ -1012,15 +1013,54 @@ select::-ms-expand {
 }
 
 .card-h {
+    display: inline-block;
+    vertical-align: top;
     font-family: "Circe", Arial, Verdana, sans-serif;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 16px;
     font-weight: normal;
     color: #ffffff;
     text-align: center;
     text-transform: none;
-    padding: 10px 0;
+    margin: 14px 0;
+    border-bottom: 1px solid transparent;
+
+    -webkit-transition-property: border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
 }
+
+.card-h:link,
+.card-h:visited {
+    border-bottom: 1px solid transparent;
+}
+
+.card-h.active,
+.card-h:active {
+    border-bottom: 1px solid #ffffff;
+}
+
+.card-h:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
 
 .h-2 {
     padding: 25px 0 10px 0;
