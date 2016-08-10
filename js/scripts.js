@@ -309,7 +309,7 @@ $(document).ready(function() {
 
     $(".menu-section .nav-item").hoverIntent({
                         over: makeTallMenuItemSection,
-                        // out: makeShortMenuItemSection,
+                        out: makeShortMenuItemSection,
                         timeout: 500
                     });
 
@@ -323,20 +323,24 @@ $(document).ready(function() {
 
                 innerLeftNavItemHeight = $( ".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block .inner-nav").height();
 
+                $(".nav-item:eq("+ indexLeftItem +") .inner-nav-block").animate({"height":innerLeftNavItemHeight},700);
+
             }
 
         }
-
-
-            $(".nav-item:eq("+ indexLeftItem +") .inner-nav-block").animate({"height":innerLeftNavItemHeight},700);
+           
 
     }
 
     function makeShortMenuItemSection(){
 
-        indexLeftItem = $( ".nav-item" ).index( this );
+        // indexLeftItem = $( ".nav-item" ).index( this );
 
-        $(".menu-section .nav-item:eq("+ indexLeftItem +") .inner-nav-block").animate({"height":0},700);
+        // if ( $(this).hasClass("active") ) {
+
+        //     $(".menu-section .nav-item:eq("+ indexLeftItem +") .inner-nav-block").animate({"height":0},700);
+
+        // }
 
     }
 
