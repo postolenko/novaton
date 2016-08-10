@@ -26,6 +26,8 @@ $(document).ready(function() {
 
     getScobeHeight();
 
+
+
     $(document).scroll(function() {
         
             // getScrollToTopBtn();   // при необходимости эту функцию можно использовать для отображения кнопки скролла
@@ -116,7 +118,7 @@ $(document).ready(function() {
                                         });
                     $(".menu-mob").css({"display": "none"});
 
-                    if( $(".page-content").hasClass("main-page-menu") ||  $(".page-content").hasClass("contacts-page") ) {
+                    if( $(".page-content div").hasClass("main-page-menu") ||  $(".page-content").hasClass("contacts-page") ) {
 
                         $(".menu-tablet").css({"display": "none !important"});
 
