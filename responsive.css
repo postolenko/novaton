@@ -329,7 +329,8 @@
 		}
 
 	    .slide-service {
-	    	margin: 0 0 45px 0;
+	    	/*margin: 0 0 45px 0;*/
+	    	margin: 0;
 	    	overflow: none;
 	    }
 
@@ -339,6 +340,7 @@
 			bottom: 0;
 			height: 0;
 			padding: 0;
+			text-align: center !important;
 		}
 
 		.responsive-show-tab {

@@ -390,11 +390,10 @@ select::-ms-expand {
     max-width: 210px;
     font-family: "Circe", Arial, Verdana, sans-serif;
     font-size: 13px;
-    line-height: 28px;
+    line-height: 24px;
     font-weight: normal;
     color: #b1b1b1;
     text-transform: uppercase;
-    margin: -6px 0 0 0;
 }
 
 .header-right-col {
@@ -437,21 +436,25 @@ select::-ms-expand {
     margin: 0 auto;
     font-family: "Circe", Arial, Verdana, sans-serif;
     font-size: 14px;
-    line-height: 25px;
+    line-height: 16px;
     font-weight: normal;
     color: #b1b1b1;
-    text-decoration: underline;
+    border-bottom: 1px solid #b1b1b1;
 }
 
 .tel-link {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 13px;
-    line-height: 25px;
-    margin: 2px 0 0 0;
+    line-height: 14px;
+    margin: 3px 0 0 0;
 }
 
 .mail-link {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 16px;
 }
 
 .map-link-box {
@@ -462,12 +465,17 @@ select::-ms-expand {
 }
 
 .map-link {
+    display: inline-block;
+    vertical-align: middle;
+    height: 17px;
     font-family: "Circe", Arial, Verdana, sans-serif;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 16px;
     font-weight: normal;
     color: #b1b1b1;
-    text-decoration: underline;
+    border-bottom: 1px solid #b1b1b1;
+    margin: 2px 0 0 0;
+    /*border-left: 1px solid #b1b1b1;*/
 }
 
 .contact-link,
@@ -498,19 +506,19 @@ select::-ms-expand {
 .map-link:link,
 .contact-link:visited,
 .map-link:visited {
-    text-decoration: underline;
+    border-bottom: 1px solid #b1b1b1;
 }
 
 .contact-link.active,
 .map-link.active,
 .contact-link:active,
 .map-link:active {
-    text-decoration: none;
+    border-bottom: 1px solid transparent;
 }
 
 .contact-link:hover,
 .map-link:hover {
-    text-decoration: none;
+    border-bottom: 1px solid transparent;
 }
 
 .page-name-links {
@@ -935,6 +943,8 @@ select::-ms-expand {
 .cards-secion {
     font-size: 0;
     line-height: 0;
+    width: 102%;
+    margin: 0 0 0 -2%;
 }
 
 .card-box {
@@ -1462,7 +1472,7 @@ ul.menu-section-list {
 
     .slide-description {
         display: block;
-        background: rgba(0, 0, 0, .3);
+        background: rgba(0, 0, 0, .5);
         width: 100%;
         height: auto;
         padding: 2% 9%;
