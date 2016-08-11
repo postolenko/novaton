@@ -308,7 +308,7 @@ $(document).ready(function() {
     $(".menu-section .nav-item").hoverIntent({
                         over: makeTallMenuItemSection,
                         out: makeShortMenuItemSection,
-                        timeout: 1000
+                        timeout: 1200
                     });
 
     function makeTallMenuItemSection(){
@@ -323,12 +323,6 @@ $(document).ready(function() {
 
                 $(".nav-item:eq("+ indexLeftItem +") .inner-nav-block").animate({"height":innerLeftNavItemHeight + "px"},800);
 
-                // setTimeout(function() {
-
-                //     $(".menu-section .nav-item:eq("+ indexLeftItem +")").addClass("active-item-menu");
-
-                // }, 710);
-
             }
 
         }
@@ -340,17 +334,7 @@ $(document).ready(function() {
 
         indexLeftItem = $( ".menu-section .nav-item" ).index( this );
 
-        // if ( $(".menu-section .nav-item:eq("+ indexLeftItem +")").hasClass("active-item-menu") ) {
-
-            $(".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").animate({"height": 0 + "px"},800);
-
-            // setTimeout(function() {
-
-            //     $(".menu-section .nav-item:eq("+ indexLeftItem +")").removeClass("active-item-menu");
-
-            // }, 710);
-
-        // }
+        $(".menu-section .nav-item:eq("+ indexLeftItem +") > .inner-nav-block").animate({"height": 0 + "px"},800);
 
     }
 
