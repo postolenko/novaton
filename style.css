@@ -203,8 +203,8 @@ body {
 /* ----- DEFAULT STYLES ------ */
 /*-------------------------------------------*/
 
-.page-article {
-    padding: 20px 0 0 0;
+.page-article h2 {
+    padding: 25px 0 10px 0;
 }
 
 .header,
@@ -333,7 +333,7 @@ a:active {
 }
 
 .active-item-menu .inner-nav-block {
-    height: auto !important;
+    height: auto;
 }
 
 *:focus {
@@ -1472,13 +1472,13 @@ ul.menu-section-list {
     position: relative;
 }
 
-.scobe {
+img.scobe {
     display: block;
     position: absolute;
     /*margin: 0 0 0 -3%;*/
     top: 0;
     left: 0;
-    width: 5px;
+    width: auto;
     height: auto;
 }
 /*
