@@ -317,6 +317,7 @@ a:active {
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
 
+
 .row {
     display: block;
     max-width: 1220px;
@@ -333,7 +334,7 @@ a:active {
 }
 
 .active-item-menu .inner-nav-block {
-    height: auto;
+    height: auto !important;
 }
 
 *:focus {
