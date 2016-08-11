@@ -126,10 +126,6 @@
 	    opacity: 1;
 	}
 
-	.menu-section .nav-item .inner-nav {
-	    opacity: .7 !important;
-	}
-
 	.menu-section .link-h-1 {
 	    font-family: "Circe Bold", Arial, Verdana, sans-serif;
 	    font-size: 15px;
