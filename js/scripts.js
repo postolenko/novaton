@@ -308,7 +308,7 @@ $(document).ready(function() {
     $(".menu-section .nav-item").hoverIntent({
                         over: makeTallMenuItemSection,
                         out: makeShortMenuItemSection,
-                        timeout: 1500
+                        timeout: 1000
                     });
 
     function makeTallMenuItemSection(){
