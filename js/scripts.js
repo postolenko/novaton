@@ -161,23 +161,19 @@ $(document).ready(function() {
 
 //  ----------------------------------------------------------------------------------------
 
-    
+   
 
     function getScobeHeight() {
 
-        for( quotesCount = 0;  quotesCount <= $(".quote").length - 1;  quotesCount++) {
+        if ( $("p").hasClass("quote") && !$(".quote img").hasClass("scobe") ) {
 
-            if ( $(".quote:eq("+ quotesCount +") span").hasClass("scobe") ) {
+            $(".quote").append("<img class='scobe' src='img/skoba.svg' alt='Quote'>");
 
-                if( $(".quote:eq("+ quotesCount +") .scobe img").length == 0 ) {
+        }
 
-                    $(".quote:eq("+ quotesCount +") .scobe").append("<img src='img/skoba.svg' alt='Quote'>");
+        for( quotesCount = 0;  quotesCount <= $(".quote").length - 1;  quotesCount++ ) {
 
-                }                    
-
-                $(".quote:eq("+ quotesCount +") .scobe img").outerHeight( $(".quote").height() );
-
-            }
+            $(".scobe:eq("+ quotesCount +")").height( $(".quote:eq("+ quotesCount +")").height() );
 
         }
 
@@ -312,7 +308,7 @@ $(document).ready(function() {
     $(".menu-section .nav-item").hoverIntent({
                         over: makeTallMenuItemSection,
                         out: makeShortMenuItemSection,
-                        timeout: 500
+                        timeout: 1000
                     });
 
     function makeTallMenuItemSection(){
@@ -354,7 +350,7 @@ $(document).ready(function() {
     $(".main-page-menu .nav-item").hoverIntent({
                         over: makeTallMainMenuItem,
                         out: makeShortMainMenuItem,
-                        timeout: 700
+                        timeout: 1500
                     });
 
     function makeTallMainMenuItem(){

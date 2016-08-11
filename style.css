@@ -1467,21 +1467,26 @@ ul.menu-section-list {
 /* ----- INNER SU PAGE ------ */
 
 .quote {
-    padding: 10px 0 10px 3%;
-    margin: 5px 0;
+    margin: 15px 0;
+    padding: 0 0 0 3%;
+    position: relative;
 }
 
 .scobe {
     display: block;
     position: absolute;
-    margin: 0 0 0 -3%;
+    /*margin: 0 0 0 -3%;*/
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: auto;
 }
-
+/*
 .scobe img {
     display: block;
     width: 8px;
     height: auto;
-}
+}*/
 
 /*Slide*/
 

@@ -343,6 +343,10 @@
 
 		/*--  Inner SU Page  --*/
 
+		.quote {
+			padding: 0 0 0 20px;
+		}
+
 		.service-miniatures .item {
 		    width: 75px;
 		}
