@@ -192,7 +192,7 @@ $(document).ready(function() {
 
         $(".main-page-menu-list").css({"width" : $(window).width() - ( $(".left-cell").width() * 2 ) + "px"});
 
-        $(".main-page-menu-list").outerHeight($(window).height() - $(".header").outerHeight(true) - $(".footer").outerHeight(true) - 140);
+        $(".main-page-menu-list").height($(window).height() - $(".header").outerHeight(true) - $(".footer").outerHeight(true) * 2 - 10 );
 
 
     }
@@ -353,8 +353,8 @@ $(document).ready(function() {
 
     $(".main-page-menu .nav-item").hoverIntent({
                         over: makeTallMainMenuItem,
-                        // out: makeShortMainMenuItem,
-                        timeout: 500
+                        out: makeShortMainMenuItem,
+                        timeout: 700
                     });
 
     function makeTallMainMenuItem(){
@@ -367,13 +367,12 @@ $(document).ready(function() {
 
                 innerMainNavItemHeight = $( ".main-page-menu .nav-item:eq("+ indexItem +") > .page-menu-hover-block .link-h-desc").outerHeight(true);
 
+                $(".main-page-menu .nav-item:eq("+ indexItem +") .page-menu-hover-block").animate({"height":innerMainNavItemHeight},700);
+
             }
 
         }
-
-
-            $(".main-page-menu .nav-item:eq("+ indexItem +") .page-menu-hover-block").animate({"height":innerMainNavItemHeight},700);
-
+ 
     }
 
     function makeShortMainMenuItem(){
@@ -461,33 +460,44 @@ var indexItemSlide;
 
             indexItemSlide = $(".responsive-show-tab").index(this);
 
-            slideDescriptionHeight = $(".slide-description:eq("+ indexItemSlide +")").height();
+            slideDescriptionHeight = $(".slide-description-box:eq("+ indexItemSlide +") .slide-description").outerHeight(true);
 
-            if ( slideDescriptionHeight > 0 ) {
+            console.log(slideDescriptionHeight);
 
-                $(".slide-description:eq("+ indexItemSlide +")").animate({
-                                                                            "height": 0,
-                                                                            "padding": 0
-                                                                        }, 700);
+            if ( $(".slide-description-box:eq("+ indexItemSlide +")").height() > 0 ) {
 
-                $(".responsive-show-tab:eq("+ indexItemSlide +") .show-txt").text("Развернуть");
+                $(".slide-description-box:eq("+ indexItemSlide +")").animate({"height": 0 + "px"}, 700);
+
+                // $(".slide-description:eq("+ indexItemSlide +")").animate({
+                //                                                             "height": 0,
+                //                                                             "padding": 0
+                //                                                         }, 700);
+
+                $(".responsive-show-tab:eq("+ indexItemSlide +") .show-txt").text("Развернуть описание");
 
                 if( $(".arrow-desc").hasClass("up") ) {
 
                     $(".arrow-desc").removeClass("up");
 
                 }
+
+                console.log(slideDescriptionHeight);
                 
 
             } else {
 
                 // $(".slide-description:eq("+ indexItemSlide +")").animate({"height": 100 + "%"}, 700);
-                $(".slide-description:eq("+ indexItemSlide +")").css({
-                                                                        "height": "auto",
-                                                                        "padding": "10px 2px"
-                                                                    });
+
+                $(".slide-description-box:eq("+ indexItemSlide +")").animate({"height": slideDescriptionHeight + "px"}, 700);
+
+                // $(".slide-description:eq("+ indexItemSlide +")").css({
+                //                                                         "height": "auto",
+                //                                                         "padding": "10px 2px"
+                //                                                     });
                 $(".arrow-desc").addClass("up");
                 $(".responsive-show-tab:eq("+ indexItemSlide +") .show-txt").text("Свернуть");
+
+                console.log(slideDescriptionHeight);
 
             }
 

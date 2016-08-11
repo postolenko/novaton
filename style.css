@@ -203,6 +203,10 @@ body {
 /* ----- DEFAULT STYLES ------ */
 /*-------------------------------------------*/
 
+.page-article {
+    padding: 20px 0 0 0;
+}
+
 .header,
 .content {
     position: relative;
@@ -752,7 +756,7 @@ select::-ms-expand {
 .bread-crumb-item {
     display: inline-block;
     vertical-align: top;
-    padding: 0 13px 0 0;
+    padding: 0 13px 7px 0;
     list-style: none;
 }
 
@@ -767,7 +771,7 @@ select::-ms-expand {
     line-height: 17px;
     font-weight: normal;
     color: #ffffff;
-    margin: 0 15px 0 -5px;
+    margin: 0 15px 0 0;
 }
 
 .bread-crumb-item:first-child:before {
@@ -831,6 +835,10 @@ select::-ms-expand {
     position: relative;
     margin-top: 70px;
     margin-bottom: 70px;
+}
+
+.page-main .page {
+    margin-bottom: 0;
 }
 
 .page-content {
@@ -953,15 +961,14 @@ select::-ms-expand {
     width: 33.33%;
     margin: 10px 0;
     padding: 2%;
-    max-height: 170px;
+    max-height: 165px;
     text-align: center;
 }
-
 
 .card-img-box {
     display: block;
     max-height: 130px;
-    border: 1px solid rgba(255, 255, 255, .7);
+    border: 1px solid rgba(255, 255, 255, .5);
     padding: 23px 2px;
     text-align: center;
     -webkit-border-radius: 7px;
@@ -992,16 +999,16 @@ select::-ms-expand {
 
 }
 
-.card-img-box:link,
-.card-img-box:visited {
-    border: 1px solid rgba(255, 255, 255, .7);
+.card:link .card-img-box,
+.card:visited .card-img-box {
+    border: 1px solid rgba(255, 255, 255, .5);
 }
 
-.card-img-box:hover {
+.card:hover .card-img-box {
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.card-img-box:active {
+.card:active .card-img-box {
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
@@ -1022,7 +1029,8 @@ select::-ms-expand {
     color: #ffffff;
     text-align: center;
     text-transform: none;
-    margin: 14px 0;
+    margin: 11px 0;
+    padding: 0;
     border-bottom: 1px solid transparent;
 
     -webkit-transition-property: border-bottom;
@@ -1047,17 +1055,17 @@ select::-ms-expand {
 
 }
 
-.card-h:link,
-.card-h:visited {
+.card .card-h:link,
+.card .card-h:visited {
     border-bottom: 1px solid transparent;
 }
 
-.card-h.active,
-.card-h:active {
+.card .card-h.active,
+.card .card-h:active {
     border-bottom: 1px solid #ffffff;
 }
 
-.card-h:hover {
+.card .card-h:hover {
     border-bottom: 1px solid #ffffff;
 }
 
@@ -1227,7 +1235,6 @@ select::-ms-expand {
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
-    letter-spacing: 1px;
     margin: 25px 0 5px 0;
 }
 
@@ -1279,6 +1286,10 @@ select::-ms-expand {
     line-height: 21px;
     font-weight: normal;
     color: #ffffff;
+}
+
+.inner-nav li a.active {
+    opacity: 1;
 }
 
 /* ----- / NAVIGATION  Main Page ------ */
@@ -1347,9 +1358,61 @@ select::-ms-expand {
     transition-timing-function: ease;
 }
 
-.menu-section .nav-item:hover {
+.menu-section .nav-item .link-h,
+.menu-section .inner-nav li a {
+    opacity: .7;
+
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .2s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .2s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .2s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+.menu-section .nav-item.active .link-h,
+.menu-section .nav-item:active .link-h {
     opacity: 1;
 }
+
+.menu-section .nav-item:hover .link-h {
+    opacity: 1;
+}
+
+
+.menu-section .inner-nav li a:link,
+.menu-section .inner-nav li a:visited {
+    opacity: .7;
+}
+
+.menu-section .inner-nav li a:active,
+.menu-section .inner-nav li a.active {
+    opacity: 1;
+}
+
+.menu-section .inner-nav li a:hover {
+    opacity: 1;
+}
+
+
+.menu-section .nav-item.active-item-menu .link-h {
+    opacity: 1;
+}
+
+
 
 .menu-section .nav-item:after {
     display: block;
@@ -2367,6 +2430,7 @@ ul.menu-section-list {
 
 .map-btn img.map-btn-x-320 {
     display: none;
+    opacity: 1;
 }
 
 .map-box .left-col,
