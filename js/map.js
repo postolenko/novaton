@@ -43,7 +43,7 @@ if( document.getElementsByClassName("map-box")[0] ) {
 
 				marker = new google.maps.Marker({
 					map: map,
-					// draggable: true,
+					draggable: false,
 					animation: google.maps.Animation.DROP,
 					position: {lat: 59.97045, lng: 30.2976},
 					map: map,

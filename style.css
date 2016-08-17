@@ -125,7 +125,6 @@ body {
     min-height: 100%;
     min-width: 100%;
 
-
     background: -moz-linear-gradient(left,  rgba(131,131,133,0.7) 0%, rgba(156,137,114,0.7) 13%, rgba(192,149,85,0.7) 30%, rgba(224,159,61,0.7) 63%, rgba(253,167,38,0.7) 100%);
     background: -webkit-linear-gradient(left,  rgba(131,131,133,0.7) 0%,rgba(156,137,114,0.7) 13%,rgba(192,149,85,0.7) 30%,rgba(224,159,61,0.7) 63%,rgba(253,167,38,0.7) 100%);
     background: linear-gradient(to right,  rgba(131,131,133,0.7) 0%,rgba(156,137,114,0.7) 13%,rgba(192,149,85,0.7) 30%,rgba(224,159,61,0.7) 63%,rgba(253,167,38,0.7) 100%);
@@ -2575,6 +2574,8 @@ img.scobe {
     position: relative;
     z-index: 2;
     padding: 15px 0;
+/*    position: absolute;
+    bottom: 0;*/
 }
 
 .footer-col-left {
