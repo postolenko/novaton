@@ -364,6 +364,7 @@ select::-ms-expand {
 
 .logo-box {
     display: table;
+    vertical-align: middle;
 }
 
 .logo {
@@ -382,6 +383,7 @@ select::-ms-expand {
     display: block;
     width: 282px;
     height: auto;
+    border: none;
 }
 
 .main-h-box {
