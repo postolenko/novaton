@@ -383,6 +383,7 @@ select::-ms-expand {
     display: block;
     width: 282px;
     height: auto;
+    border: 1px solid transparent;
     border: none;
 }
 
