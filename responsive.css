@@ -54,6 +54,10 @@
 	    width: 30%;
 	}
 
+	.header-h {
+		display: none;
+	}
+
 	.header-right-col {
 	    width: 70%;
 	}
